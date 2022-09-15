@@ -51,9 +51,13 @@ md"""
 \vec L_{\mathrm{rod}_0} + \vec L_{\mathrm{putty}_0} &=
 \vec L_{\mathrm{rod}_\mathrm{f}} + \vec L_{\mathrm{putty}_\mathrm{f}} \\
 d_\mathrm{CM} m v &= (I_\mathrm{rod} + I_\mathrm{putty}) \omega_\mathrm{f} \\
-d_\mathrm{CM} m v &= \left(
+&= \left(
 I_\mathrm{rod}^{\mathrm{CM}} + M x_\mathrm{CM}^2 + m d_\mathrm{CM}^2
-\right) \omega_\mathrm{f}
+\right) \omega_\mathrm{f} \\
+&= \left[
+\frac{MD^2}{12} + \frac{m^2 M D^2}{4(m + M)^2} +
+\frac{m M^2 D^2}{4(m + M)^2}
+\right] \omega_\mathrm{f}
 \end{align}
 ```
 """
