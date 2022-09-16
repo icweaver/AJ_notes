@@ -66,7 +66,8 @@ md"""
 	```math
 	\begin{align}
 	L &= \vec r \times \vec p = I \vec \omega \\
-	I &= I_\mathrm{CM} + M d^2
+	I &= I_\mathrm{CM} + M d^2 \\
+	I &= mr^2
 	\end{align}
 	```
 
