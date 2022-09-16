@@ -153,9 +153,23 @@ md"""
 	For a non conducting ball of radius ``R`` with a charge density proportional to the 3rd power of distance from its center, find the electric field and the potential from zero to infinity.
 """
 
-# ╔═╡ 286f7a50-1844-4e77-bfe0-abe3e9b6d9a7
+# ╔═╡ 088fb901-220c-477a-a954-44c86113abb8
 md"""
-Adding up spherical shells with charge:
+#### Enclosed charge
+"""
+
+# ╔═╡ c516e0bf-3cb7-4939-bb40-7ba44bd0970a
+md"""
+The eletric field and potential are given by:
+
+```math
+\begin{align}
+E(r) &= \frac{1}{4\pi \epsilon_0} \frac{q_\mathrm{en}}{r^2} \, , \\
+V(r) &= \frac{1}{4\pi \epsilon_0} \frac{q_\mathrm{en}}{r} \, ,
+\end{align}
+```
+
+respectively. Let's solve for ``q_\mathrm{en}`` first. Adding up spherical shells with charge:
 
 ```math
 \begin{align}
@@ -179,9 +193,22 @@ Letting ``Q`` equal the total charge of the sphere, we can solve for the proport
 
 ```math
 \begin{align}
-q_\mathrm{en}(r=R) = Q = \frac{2}{3}\pi \rho_0 R^6
+q_\mathrm{en}(r=R) &= Q = \frac{2}{3}\pi \rho_0 R^6 \, , \\
+\rho_0 &= \frac{3Q}{2\pi R^6} \, .
 \end{align}
 ```
+
+The enclosed charge is then,
+
+```math
+q_\mathrm{en}(r) = \frac{2}{3}\pi \cdot \frac{3Q}{2\pi R^6}r^6
+	= Q\left(\frac{r}{R}\right)^6 \, .
+```
+"""
+
+# ╔═╡ f6c71ca3-d3bb-4e7f-832d-5833745df2f0
+md"""
+#### Electric field and potential
 """
 
 # ╔═╡ 2706da0d-5a3a-4657-a91f-f7d5b5ecc283
@@ -463,7 +490,9 @@ version = "17.4.0+0"
 # ╟─c9bafd4a-7a7a-4e4a-944e-41680e5f0457
 # ╟─8be44c42-c37f-4e2b-b133-71b6b193ba1c
 # ╟─97dc42db-370f-4f36-99e9-342df976e8a6
-# ╠═286f7a50-1844-4e77-bfe0-abe3e9b6d9a7
+# ╟─088fb901-220c-477a-a954-44c86113abb8
+# ╠═c516e0bf-3cb7-4939-bb40-7ba44bd0970a
+# ╠═f6c71ca3-d3bb-4e7f-832d-5833745df2f0
 # ╠═2706da0d-5a3a-4657-a91f-f7d5b5ecc283
 # ╠═ef21f037-dfe4-40f5-ae14-12999a8709f5
 # ╟─00000000-0000-0000-0000-000000000001
