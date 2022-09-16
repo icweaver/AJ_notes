@@ -153,13 +153,10 @@ md"""
 	For a non conducting ball of radius ``R`` with a charge density proportional to the 3rd power of distance from its center, find the electric field and the potential from zero to infinity.
 """
 
-# ╔═╡ 088fb901-220c-477a-a954-44c86113abb8
-md"""
-#### Enclosed charge
-"""
-
 # ╔═╡ c516e0bf-3cb7-4939-bb40-7ba44bd0970a
 md"""
+#### Enclosed charge
+
 The eletric field and potential are given by:
 
 ```math
@@ -209,6 +206,24 @@ q_\mathrm{en}(r) = \frac{2}{3}\pi \cdot \frac{3Q}{2\pi R^6}r^6
 # ╔═╡ f6c71ca3-d3bb-4e7f-832d-5833745df2f0
 md"""
 #### Electric field and potential
+
+Now that we have the enclosed charge, the electric field is then:
+
+```math
+E(0 \le r \le R) = \frac{1}{4\pi \epsilon_0 r^2} \cdot Q \left(\frac{r}{R}\right)^6
+	= \boxed{\frac{1}{4\pi \epsilon_0} \frac{Q}{R^6}r^4} \, .
+```
+
+For `r > R`, this simplifies down to the electric field due to a point charge:
+
+```math
+E(r > R) = \boxed{\frac{1}{4\pi \epsilon_0}\frac{Q}{r^2}}
+```
+
+Similarly, the electric potential is:
+
+```math
+```
 """
 
 # ╔═╡ 2706da0d-5a3a-4657-a91f-f7d5b5ecc283
@@ -490,8 +505,7 @@ version = "17.4.0+0"
 # ╟─c9bafd4a-7a7a-4e4a-944e-41680e5f0457
 # ╟─8be44c42-c37f-4e2b-b133-71b6b193ba1c
 # ╟─97dc42db-370f-4f36-99e9-342df976e8a6
-# ╟─088fb901-220c-477a-a954-44c86113abb8
-# ╠═c516e0bf-3cb7-4939-bb40-7ba44bd0970a
+# ╟─c516e0bf-3cb7-4939-bb40-7ba44bd0970a
 # ╠═f6c71ca3-d3bb-4e7f-832d-5833745df2f0
 # ╠═2706da0d-5a3a-4657-a91f-f7d5b5ecc283
 # ╠═ef21f037-dfe4-40f5-ae14-12999a8709f5
