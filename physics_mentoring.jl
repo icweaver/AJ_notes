@@ -63,7 +63,10 @@ md"""
 ### Conservation of angular momentum
 !!! note "Useful equations"
 	```math
-	L = \vec r \times \vec p = I \vec \omega
+	\begin{align}
+	L &= \vec r \times \vec p = I \vec \omega \\
+	I &= I_\mathrm{CM} + M d^2
+	\end{align}
 	```
 
 ```math
@@ -71,14 +74,17 @@ md"""
 \sum \vec L_0 &= \sum \vec L_\mathrm{f} \\
 \vec L_{\mathrm{putty}_0} + \cancelto{0}{\vec L_{\mathrm{rod}_0}} &=
 \vec L_{\mathrm{putty}_\mathrm{f}} + \vec L_{\mathrm{rod}_\mathrm{f}} \\
-d_\mathrm{CM} m v &= (I_\mathrm{rod} + I_\mathrm{putty}) \omega_\mathrm{f} \\
-&= \left(
-I_\mathrm{rod}^{\mathrm{CM}} + M x_\mathrm{CM}^2 + m d_\mathrm{CM}^2
-\right) \omega_\mathrm{f} \\
-&= \left[
-\frac{MD^2}{12} + \frac{m^2 M D^2}{4(m + M)^2} +
-\frac{m M^2 D^2}{4(m + M)^2}
-\right] \omega_\mathrm{f}
+d_\mathrm{CM} m v &= (I_\mathrm{putty} + I_\mathrm{rod}) \omega_\mathrm{f} \\
+	&= \left(
+		m d_\mathrm{CM}^2
+		+ I_\mathrm{rod}^{\mathrm{CM}}
+		+ M x_\mathrm{CM}^2
+	\right) \omega_\mathrm{f} \\
+	&= \left[
+		\frac{MD^2}{12}
+		+ \frac{m^2 M D^2}{4(m + M)^2}
+		+ \frac{m M^2 D^2}{4(m + M)^2}
+	\right] \omega_\mathrm{f}
 \end{align}
 ```
 """
