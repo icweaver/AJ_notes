@@ -122,9 +122,19 @@ We have an inelastic collision, so energy is not conserved here:
 ```math
 \begin{align}
 \sum K_0 &= K_{\mathrm{putty}_0} + \cancelto{0}{K_{\mathrm{rod}_0}} \\
-	&= \frac{1}{2} m v^2\, ,\\
+	&= \boxed{\frac{1}{2} m v^2} \, ,\\
 \sum K_\mathrm{f} &= K_{\mathrm{(putty + rod)}_\mathrm{f}} \\
-	&= 
+	&= K_{\mathrm{tran}_\mathrm{f}} + K_{\mathrm{rot}_\mathrm{f}} \\
+	&= \frac{1}{2} (m + M)v_\mathrm{CM}^2
+		+ \frac{1}{2}I_\mathrm{tot}\omega_\mathrm{f}^2 \\
+	&= \frac{1}{2}(m + M)\frac{m^2}{(m + M)^2} v^2
+		+ \frac{1}{2}MD^2 \frac{4m + M}{12(m + M)}
+			\cdot \frac{36 m^2 v^2}{(4m + M)^2 D^2} \\
+	&= \frac{m^2 v^2}{2(m + M)} + \frac{3m^2Mv^2}{2(4m + M)(m + M)} \\
+	&= \frac{4m^3v^2 + 4m^2Mv^2}{2(4m + M)(m + M)} \\
+	&= \frac{2m^2v^2(m + M)}{(4m + M)(m + M)} \\
+	&= \boxed{\frac{2m^2}{4m + M}v^2} \, .
+	
 \end{align}
 ```
 """
