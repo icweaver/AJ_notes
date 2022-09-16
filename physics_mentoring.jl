@@ -27,7 +27,7 @@ md"""
 
 # ╔═╡ a30bddb2-8cf5-403a-ba19-774979654b24
 md"""
-Let's place our origin at the new center of mass for the combined rod-putty system.
+Let's place our origin at the new center of mass for the combined putty-rod system.
 """
 
 # ╔═╡ 474cee32-9c6f-44b5-98af-9d227da6d775
@@ -72,8 +72,10 @@ md"""
 ```math
 \begin{align}
 \sum \vec L_0 &= \sum \vec L_\mathrm{f} \\
+
 \vec L_{\mathrm{putty}_0} + \cancelto{0}{\vec L_{\mathrm{rod}_0}} &=
-\vec L_{\mathrm{putty}_\mathrm{f}} + \vec L_{\mathrm{rod}_\mathrm{f}} \\
+\vec L_{\mathrm{putty}_\mathrm{f}} + \vec L_{\mathrm{rod}_\mathrm{f}} \, , \\
+
 d_\mathrm{CM} m v &= (I_\mathrm{putty} + I_\mathrm{rod}) \omega_\mathrm{f} \\
 	&= \left(
 		m d_\mathrm{CM}^2
@@ -81,33 +83,37 @@ d_\mathrm{CM} m v &= (I_\mathrm{putty} + I_\mathrm{rod}) \omega_\mathrm{f} \\
 		+ M x_\mathrm{CM}^2
 	\right) \omega_\mathrm{f} \\
 	&= \left[
-		\frac{MD^2}{12}
+		\frac{m M^2 D^2}{4(m + M)^2}
+		+ \frac{MD^2}{12}
 		+ \frac{m^2 M D^2}{4(m + M)^2}
-		+ \frac{m M^2 D^2}{4(m + M)^2}
-	\right] \omega_\mathrm{f}
+	\right] \omega_\mathrm{f} \\
+	&= I_\mathrm{total} \omega_\mathrm{f} \, , \\
+
+\omega_\mathrm{f} &= \frac{d_\mathrm{CM} m v}{I_\mathrm{total}} \, .
 \end{align}
 ```
-"""
 
-# ╔═╡ 8f10efa7-a289-421d-ba5f-5b2fd4473e5a
-md"""
+If we simplify this down a bit, we have:
+
 ```math
 \begin{align}
 I_\mathrm{total} &= MD^2\left[
-\frac{1}{12} + \frac{m^2 + mM}{4(m + M)^2}
-\right] \\
-&= MD^2\left[
-\frac{1}{12} + \frac{m}{4(m + M)}
-\right]
-\end{align}
-```
-"""
+	\frac{1}{12} + \frac{m^2 + mM}{4(m + M)^2}
+	\right] \\
+	&= MD^2\left[
+	\frac{1}{12} + \frac{m}{4(m + M)}
+\right] \, , \\
 
-# ╔═╡ d603e867-3173-481f-8e28-cca1c2d48352
-md"""
-```math
-\begin{align}
-\omega_\mathrm{f} &= \frac{d_\mathrm{CM} mv}{I_\mathrm{total}}
+\omega_\mathrm{f} &= \frac{\frac{M}{2(m + M)}D \cdot mv}{
+	MD^2\left[
+		\frac{1}{12} + \frac{m}{4(m + M)}
+	\right] \\
+} \\
+	&= \frac{m}{2(m + M)\left[\frac{1}{12} + \frac{m}{4(m + M)} \right]}
+		\cdot \frac{v}{D} \\
+	&= \frac{m}{\frac{m + M}{6} + \frac{m}{2}} \cdot \frac{v}{D} \\
+	&= \frac{m}{\frac{m + M + 3m}{6}} \cdot \frac{v}{D} \\
+	&= \boxed{\frac{6m}{4m + M} \cdot \frac{v}{D}} \, .
 \end{align}
 ```
 """
@@ -389,9 +395,7 @@ version = "17.4.0+0"
 # ╠═474cee32-9c6f-44b5-98af-9d227da6d775
 # ╠═608fba5a-abf4-45f3-8f0b-105a03d84ee8
 # ╠═c9bafd4a-7a7a-4e4a-944e-41680e5f0457
-# ╠═8f10efa7-a289-421d-ba5f-5b2fd4473e5a
-# ╠═d603e867-3173-481f-8e28-cca1c2d48352
-# ╟─2706da0d-5a3a-4657-a91f-f7d5b5ecc283
-# ╟─ef21f037-dfe4-40f5-ae14-12999a8709f5
+# ╠═2706da0d-5a3a-4657-a91f-f7d5b5ecc283
+# ╠═ef21f037-dfe4-40f5-ae14-12999a8709f5
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
