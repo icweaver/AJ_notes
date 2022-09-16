@@ -103,17 +103,11 @@ I_\mathrm{tot} &= MD^2\left[
 	\right] \\
 	&= MD^2\left[
 	\frac{1}{12} + \frac{m}{4(m + M)}
-\right] \, , \\
-
-\omega_\mathrm{f} &= \frac{\frac{M}{2(m + M)}D \cdot mv}{
-	MD^2\left[
-		\frac{1}{12} + \frac{m}{4(m + M)}
 	\right] \\
-} \\
-	&= \frac{m}{2(m + M)\left[\frac{1}{12} + \frac{m}{4(m + M)} \right]}
-		\cdot \frac{v}{D} \\
-	&= \frac{m}{\frac{m + M}{6} + \frac{m}{2}} \cdot \frac{v}{D} \\
-	&= \frac{m}{\frac{m + M + 3m}{6}} \cdot \frac{v}{D} \\
+	&= MD^2 \left[\frac{(m + M) + 3m}{12 (m + M)}\right] \\
+	&= MD^2 \frac{4m + M}{12(m + M)} \\
+
+\omega_\mathrm{f} &= \frac{M}{2(m + M)} Dmv \cdot \frac{12 (m + M)}{MD^2 (4m + M)} \\
 	&= \boxed{\frac{6m}{4m + M} \cdot \frac{v}{D}} \, .
 \end{align}
 ```
@@ -394,7 +388,7 @@ version = "17.4.0+0"
 # ╟─271d679c-bbb6-4636-87e6-9afa2f3876e9
 # ╟─a30bddb2-8cf5-403a-ba19-774979654b24
 # ╟─608fba5a-abf4-45f3-8f0b-105a03d84ee8
-# ╟─c9bafd4a-7a7a-4e4a-944e-41680e5f0457
+# ╠═c9bafd4a-7a7a-4e4a-944e-41680e5f0457
 # ╠═2706da0d-5a3a-4657-a91f-f7d5b5ecc283
 # ╠═ef21f037-dfe4-40f5-ae14-12999a8709f5
 # ╟─00000000-0000-0000-0000-000000000001
