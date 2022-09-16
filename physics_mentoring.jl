@@ -133,8 +133,11 @@ We have an inelastic collision, so energy is not conserved here:
 	&= \frac{m^2 v^2}{2(m + M)} + \frac{3m^2Mv^2}{2(4m + M)(m + M)} \\
 	&= \frac{4m^3v^2 + 4m^2Mv^2}{2(4m + M)(m + M)} \\
 	&= \frac{2m^2v^2(m + M)}{(4m + M)(m + M)} \\
-	&= \boxed{\frac{2m^2}{4m + M}v^2} \, .
-	
+	&= \boxed{\frac{2m^2}{4m + M}v^2} \, , \\
+
+f \equiv \frac{\sum K_\mathrm{f}}{\sum K_\mathrm{0}}
+	&= \frac{2m^2v^2}{4m + M} \cdot \frac{2}{mv^2} \\
+	&= \boxed{\frac{4m}{4m + M}} \, .
 \end{align}
 ```
 """
@@ -414,8 +417,8 @@ version = "17.4.0+0"
 # ╟─271d679c-bbb6-4636-87e6-9afa2f3876e9
 # ╟─a30bddb2-8cf5-403a-ba19-774979654b24
 # ╟─608fba5a-abf4-45f3-8f0b-105a03d84ee8
-# ╠═c9bafd4a-7a7a-4e4a-944e-41680e5f0457
-# ╠═8be44c42-c37f-4e2b-b133-71b6b193ba1c
+# ╟─c9bafd4a-7a7a-4e4a-944e-41680e5f0457
+# ╟─8be44c42-c37f-4e2b-b133-71b6b193ba1c
 # ╠═2706da0d-5a3a-4657-a91f-f7d5b5ecc283
 # ╠═ef21f037-dfe4-40f5-ae14-12999a8709f5
 # ╟─00000000-0000-0000-0000-000000000001
