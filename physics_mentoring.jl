@@ -105,10 +105,26 @@ I_\mathrm{tot} &= MD^2\left[
 	\frac{1}{12} + \frac{m}{4(m + M)}
 	\right] \\
 	&= MD^2 \left[\frac{(m + M) + 3m}{12 (m + M)}\right] \\
-	&= MD^2 \frac{4m + M}{12(m + M)} \\
+	&= \boxed{MD^2 \frac{4m + M}{12(m + M)}} \, , \\
 
 \omega_\mathrm{f} &= \frac{M}{2(m + M)} Dmv \cdot \frac{12 (m + M)}{MD^2 (4m + M)} \\
 	&= \boxed{\frac{6m}{4m + M} \cdot \frac{v}{D}} \, .
+\end{align}
+```
+"""
+
+# ╔═╡ 8be44c42-c37f-4e2b-b133-71b6b193ba1c
+md"""
+### Energy
+
+We have an inelastic collision, so energy is not conserved here:
+
+```math
+\begin{align}
+\sum K_0 &= K_{\mathrm{putty}_0} + \cancelto{0}{K_{\mathrm{rod}_0}} \\
+	&= \frac{1}{2} m v^2\, ,\\
+\sum K_\mathrm{f} &= K_{\mathrm{(putty + rod)}_\mathrm{f}} \\
+	&= 
 \end{align}
 ```
 """
@@ -389,6 +405,7 @@ version = "17.4.0+0"
 # ╟─a30bddb2-8cf5-403a-ba19-774979654b24
 # ╟─608fba5a-abf4-45f3-8f0b-105a03d84ee8
 # ╠═c9bafd4a-7a7a-4e4a-944e-41680e5f0457
+# ╠═8be44c42-c37f-4e2b-b133-71b6b193ba1c
 # ╠═2706da0d-5a3a-4657-a91f-f7d5b5ecc283
 # ╠═ef21f037-dfe4-40f5-ae14-12999a8709f5
 # ╟─00000000-0000-0000-0000-000000000001
