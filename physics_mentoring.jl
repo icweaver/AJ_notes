@@ -15,13 +15,15 @@ md"""
 # AJ Tutoring Teach-backs 🍎
 """
 
-# ╔═╡ 271d679c-bbb6-4636-87e6-9afa2f3876e9
+# ╔═╡ 5edcb50f-d926-4ecc-a207-88f00410fad3
 @mdx """
 ## Session #1
+"""
 
+# ╔═╡ 271d679c-bbb6-4636-87e6-9afa2f3876e9
+@mdx """
+### Putty and rod
 !!! tip "Question 1"
-	*Combined angular momentum and linear momentum problem*
-	
 	Imagine a thin rod of length ``L`` and mass ``M`` is resting on a smooth table parallel to the x axis. A small ball of putty of mass m moving with velocity ``v`` along the y axis. It hits and stick to one edge of the rod. Describe the subsequent motion and derive the relevant equations.
 """
 
@@ -46,7 +48,7 @@ d_\mathrm{CM} &= \frac{D}{2} - x_\mathrm{CM}
 
 # ╔═╡ 608fba5a-abf4-45f3-8f0b-105a03d84ee8
 md"""
-### Conservation of linear momentum
+#### Conservation of linear momentum
 
 ```math
 \begin{align}
@@ -61,7 +63,7 @@ v_\mathrm{CM} &= \boxed{\frac{m}{m + M} v} \, .
 
 # ╔═╡ c9bafd4a-7a7a-4e4a-944e-41680e5f0457
 md"""
-### Conservation of angular momentum
+#### Conservation of angular momentum
 !!! note "Useful equations"
 	```math
 	\begin{align}
@@ -116,7 +118,7 @@ I_\mathrm{tot} &= MD^2\left[
 
 # ╔═╡ 8be44c42-c37f-4e2b-b133-71b6b193ba1c
 md"""
-### Energy
+#### Energy
 
 We have an inelastic collision, so energy is not conserved here:
 
@@ -143,8 +145,47 @@ f \equiv \frac{\sum K_\mathrm{f}}{\sum K_\mathrm{0}}
 ```
 """
 
+# ╔═╡ 97dc42db-370f-4f36-99e9-342df976e8a6
+md"""
+### Charged ball
+
+!!! tip "Question 2"
+	For a non conducting ball of radius ``R`` with a charge density proportional to the 3rd power of distance from its center, find the electric field and the potential from zero to infinity.
+"""
+
+# ╔═╡ 286f7a50-1844-4e77-bfe0-abe3e9b6d9a7
+md"""
+Adding up spherical shells with charge:
+
+```math
+\begin{align}
+\newcommand{\d}{\operatorname{d\!}{}}
+\d q &= \rho(r) \d V = \rho(r) \cdot 4 \pi r^2 \d r\, ,
+\end{align}
+```
+
+where ``\rho(r) = \rho_0 r^3`` gives the following enclosed charge:
+
+```math
+\begin{align}
+q_\mathrm{en}(r) &= 4\pi \int_{r=0}^r \rho(r) r^2 \d r \\
+	&= 4\pi\rho_0 \int_0^r r^5 \d r \\
+	&= \left. 4\pi \rho_0 \frac{r^6}{6} \right|_0^r \\
+	&= \frac{2}{3}\pi \rho_0 r^6 \, .
+\end{align}
+```
+
+Letting ``Q`` equal the total charge of the sphere, we can solve for the proportionality constant ``\rho_0``:
+
+```math
+\begin{align}
+q_\mathrm{en}(r=R) = Q = \frac{2}{3}\pi \rho_0 R^6
+\end{align}
+```
+"""
+
 # ╔═╡ 2706da0d-5a3a-4657-a91f-f7d5b5ecc283
-TableOfContents()
+TableOfContents(depth=4)
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
@@ -415,11 +456,14 @@ version = "17.4.0+0"
 
 # ╔═╡ Cell order:
 # ╟─701a2902-3549-11ed-2235-1573d08cc4d8
+# ╟─5edcb50f-d926-4ecc-a207-88f00410fad3
 # ╟─271d679c-bbb6-4636-87e6-9afa2f3876e9
 # ╟─a30bddb2-8cf5-403a-ba19-774979654b24
 # ╟─608fba5a-abf4-45f3-8f0b-105a03d84ee8
 # ╟─c9bafd4a-7a7a-4e4a-944e-41680e5f0457
 # ╟─8be44c42-c37f-4e2b-b133-71b6b193ba1c
+# ╟─97dc42db-370f-4f36-99e9-342df976e8a6
+# ╠═286f7a50-1844-4e77-bfe0-abe3e9b6d9a7
 # ╠═2706da0d-5a3a-4657-a91f-f7d5b5ecc283
 # ╠═ef21f037-dfe4-40f5-ae14-12999a8709f5
 # ╟─00000000-0000-0000-0000-000000000001
