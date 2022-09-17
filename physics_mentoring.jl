@@ -233,7 +233,15 @@ V(0 \le r \le R)
 		\int_R^r r^4 \d r \\
 	&= V(r = R) + \frac{1}{4\pi \epsilon_0}\frac{Q}{R^6}
 		\left[ \frac{r^5}{5} \right]_r^R \\
-	&= 
+	&= \frac{1}{4\pi \epsilon_0} \cdot \frac{Q}{R}
+		+ \frac{1}{5} \cdot \frac{1}{4\pi \epsilon_0 R^5} \cdot \frac{Q}{R}
+			\left(R^5 - r^5\right) \\
+	&= \frac{1}{4\pi \epsilon_0} \cdot \frac{Q}{R}
+		\left[1 + \frac{1}{5R^5} \left(R^5 - r^5\right)\right] \\
+	&= \frac{1}{4\pi \epsilon_0} \cdot \frac{Q}{R}
+		\left[\frac{6}{5} - \frac{r^5}{5R^5}\right] \\
+	&= \boxed{\frac{1}{20\pi \epsilon_0} \cdot \frac{Q}{R}
+		\left[6 - \left(\frac{r}{R}\right)^5\right]} \, .
 \end{align}
 ```
 """
@@ -518,7 +526,7 @@ version = "17.4.0+0"
 # ╟─8be44c42-c37f-4e2b-b133-71b6b193ba1c
 # ╟─97dc42db-370f-4f36-99e9-342df976e8a6
 # ╟─c516e0bf-3cb7-4939-bb40-7ba44bd0970a
-# ╠═f6c71ca3-d3bb-4e7f-832d-5833745df2f0
+# ╟─f6c71ca3-d3bb-4e7f-832d-5833745df2f0
 # ╠═2706da0d-5a3a-4657-a91f-f7d5b5ecc283
 # ╠═ef21f037-dfe4-40f5-ae14-12999a8709f5
 # ╟─00000000-0000-0000-0000-000000000001
