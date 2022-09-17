@@ -214,18 +214,26 @@ E(0 \le r \le R) = \frac{1}{4\pi \epsilon_0 r^2} \cdot Q \left(\frac{r}{R}\right
 	= \boxed{\frac{1}{4\pi \epsilon_0} \frac{Q}{R^6}r^4} \, .
 ```
 
-For `r > R`, this simplifies down to the electric field due to a point charge:
+For ``r > R``, this simplifies down to the electric field due to a point charge:
 
 ```math
 E(r > R) = \boxed{\frac{1}{4\pi \epsilon_0}\frac{Q}{r^2}}
 ```
 
-Similarly, the electric potential is:
+Now, although Gauss's law tells us that the electric field is equivalent to that due to an enclosed point charge when outside of the insulator, the same guarantee cannot be made for the electric potential once we are inside. For this, we need to drop back down to its definition, and perform the integration over the electric field there ourselves:
 
 ```math
 \begin{align}
-V(0 \le r \le R) &= \boxed{\frac{1}{4\pi \epsilon_0} \frac{Q}{R^6}r^5} \, , \\
-V(r > R) &= \boxed{\frac{1}{4\pi \epsilon_0}\frac{Q}{r}} \, .
+V(r > R) &= V(r = R)
+	= \int_{-\infty}^r \vec E(r > R) \cdot \d\vec r
+	= \boxed{\frac{1}{4\pi \epsilon_0}\frac{Q}{r}} \, , \\
+V(0 \le r \le R)
+	&= V(r = R) + \int_R^r \vec E(0 \le r \le R) \cdot \d \vec r \\
+	&= V(r = R) - \frac{1}{4\pi \epsilon_0}\frac{Q}{R^6}
+		\int_R^r r^4 \d r \\
+	&= V(r = R) + \frac{1}{4\pi \epsilon_0}\frac{Q}{R^6}
+		\left[ \frac{r^5}{5} \right]_r^R \\
+	&= 
 \end{align}
 ```
 """
@@ -250,7 +258,7 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.8.0"
 manifest_format = "2.0"
-project_hash = "18a7377773b4cb6a9f642b5ac5e7962f6a005b5e"
+project_hash = "3ad999db5065cff805c284f4fd567aca00e7c0bb"
 
 [[deps.AbstractPlutoDingetjes]]
 deps = ["Pkg"]
@@ -510,7 +518,7 @@ version = "17.4.0+0"
 # ╟─8be44c42-c37f-4e2b-b133-71b6b193ba1c
 # ╟─97dc42db-370f-4f36-99e9-342df976e8a6
 # ╟─c516e0bf-3cb7-4939-bb40-7ba44bd0970a
-# ╟─f6c71ca3-d3bb-4e7f-832d-5833745df2f0
+# ╠═f6c71ca3-d3bb-4e7f-832d-5833745df2f0
 # ╠═2706da0d-5a3a-4657-a91f-f7d5b5ecc283
 # ╠═ef21f037-dfe4-40f5-ae14-12999a8709f5
 # ╟─00000000-0000-0000-0000-000000000001
