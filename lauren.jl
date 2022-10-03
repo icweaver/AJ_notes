@@ -64,23 +64,39 @@ md"""
 We ran into that weird looking formula:
 
 ```math
+\newcommand{\bl}{\color{cornflowerblue}}
+\newcommand{\or}{\color{#e69f00}}
+
 \frac{\d}{\d x}\left[\left | f(x)\right |\right]
-= \frac{f(x)}{\left|f(x)\right|}f'(x)
+= {\or \frac{f(x)}{\left|f(x)\right|}}f'(x)
 ```
 
-Turns out, it's not so weird, it's just the chain rule hiding in disguise again! We can see how this shakes out from the ``|x|`` example from the handout if we use the trick that ``|x| = \left(x^2\right)^{1/2}``.
+Turns out, it's not so weird, it's just the chain rule hiding in disguise again! We can see how this shakes out from the ``|x|`` example from the handout if we use the trick that ``{\bl |x| = \left(x^2\right)^{1/2}}``.
 
 ```math
 \begin{align}
-\frac{\d}{\d x}\left[|x|\right]
-&= \frac{\d}{\d x}\left[\left(x^2\right)^{1/2}\right] \\
+\frac{\d}{\d x}\left[{\bl |x|}\right]
+&= \frac{\d}{\d x}\left[{\bl \left(x^2\right)^{1/2}}\right] \\
 &= \frac{1}{2}\left(x^2\right)^{-1/2} \cdot 2x \\
-&= \frac{x}{\left(x^2\right)^{-1/2}} \\
-&= \frac{x}{|x|} \, .
+&= \frac{x}{{\bl \left(x^2\right)^{1/2}}} \\
+&= \frac{x}{{\bl |x|}} \, .
 \end{align}
 ```
 
-Pretty neat! The general expression for the derivative of ``|f(x)|`` then follows naturally from the chain rule, and we have our result above.
+Pretty neat! The general expression for the derivative of ``|f(x)|`` then follows naturally from the chain rule:
+
+```math
+\begin{align}
+\left|f(x)\right| &= h[g(x)], \\
+h(x) = |x|&,\ h'(x) = \frac{x}{|x|}, \\
+g(x) = f(x)&,\ g'(x) = f'(x), \\
+\frac{\d}{\d x}\left[f(x)\right] &= {\or h'(x)[g(x)]} \cdot g'(x) \\
+&= {\or \frac{f(x)}{\left|f(x)\right|}} \cdot f'(x) \quad.
+\end{align}
+```
+
+
+and we have our result from above!
 """
 
 # ╔═╡ 04e7af66-08a0-4cff-b828-2ffebec3d923
@@ -101,7 +117,7 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.8.0"
 manifest_format = "2.0"
-project_hash = "502a5e5263da26fcd619b7b7033f402a42a81ffc"
+project_hash = "da0f1787f1abb3f1cdc4109722909b0a763138ba"
 
 [[deps.AbstractPlutoDingetjes]]
 deps = ["Pkg"]
