@@ -1,17 +1,17 @@
 ### A Pluto.jl notebook ###
-# v0.19.11
+# v0.19.12
 
 using Markdown
 using InteractiveUtils
 
 # ╔═╡ 2712f198-36ad-11ed-38f4-6dd42a65fe0c
-parent = "Yumi"
+parent = "Shireen Bazzi"
 
 # ╔═╡ cc03d30e-4a9a-4235-8f05-a6c2663f6b74
-course = "Physics"
+course = "AP Physics C"
 
 # ╔═╡ c1a044af-c035-4ee4-a3f6-db6a63efd705
-student = "Ellie"
+student = "Nadim"
 
 # ╔═╡ 94e9d11d-22d0-4782-99e1-a20e9fed2a94
 ptext(s) = Markdown.MD(Markdown.Admonition("warning", " ", [s]))
@@ -66,6 +66,22 @@ $(ptext(md"Parent: You too."))
 $(ttext(md"Tutor: Bye."))
 """
 
+# ╔═╡ 00000000-0000-0000-0000-000000000001
+PLUTO_PROJECT_TOML_CONTENTS = """
+[deps]
+"""
+
+# ╔═╡ 00000000-0000-0000-0000-000000000002
+PLUTO_MANIFEST_TOML_CONTENTS = """
+# This file is machine-generated - editing it directly is not advised
+
+julia_version = "1.8.0"
+manifest_format = "2.0"
+project_hash = "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+
+[deps]
+"""
+
 # ╔═╡ Cell order:
 # ╠═2712f198-36ad-11ed-38f4-6dd42a65fe0c
 # ╠═cc03d30e-4a9a-4235-8f05-a6c2663f6b74
@@ -73,3 +89,5 @@ $(ttext(md"Tutor: Bye."))
 # ╟─9d411040-6f39-4d80-a1c8-1dd44e0c23bc
 # ╠═94e9d11d-22d0-4782-99e1-a20e9fed2a94
 # ╠═a891a44e-803c-4884-8e58-ed3715012032
+# ╟─00000000-0000-0000-0000-000000000001
+# ╟─00000000-0000-0000-0000-000000000002
