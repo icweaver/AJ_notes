@@ -72,7 +72,7 @@ The acceleration of the package ``\pc (a_p)`` will certainly not be zero any mor
 \end{align*}
 ```
 
-where ``\am = \ap = a`` because they are both connected by a taught rope. Solving this for ``a`` (by adding the equations together, using subtitution, etc.) then gives:
+where ``\am = \ap = a`` because they are both connected by a taught rope. Solving this for ``a`` (by adding the equations together, using substitution, etc.) then gives:
 
 ```math
 {\yc a = \boxed{\frac{\mp - \mm}{\mp + \mm} g}}\, .
