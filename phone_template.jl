@@ -5,13 +5,13 @@ using Markdown
 using InteractiveUtils
 
 # ╔═╡ 2712f198-36ad-11ed-38f4-6dd42a65fe0c
-parent = "Shireen Bazzi"
+parent = "Lisa Wachtell"
 
 # ╔═╡ cc03d30e-4a9a-4235-8f05-a6c2663f6b74
 course = "AP Physics C"
 
 # ╔═╡ c1a044af-c035-4ee4-a3f6-db6a63efd705
-student = "Nadim"
+student = "Tobey"
 
 # ╔═╡ 94e9d11d-22d0-4782-99e1-a20e9fed2a94
 ptext(s) = Markdown.MD(Markdown.Admonition("warning", " ", [s]))
