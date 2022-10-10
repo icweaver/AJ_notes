@@ -74,7 +74,23 @@ The acceleration of the package ``\pc (a_p)`` will certainly not be zero any mor
 
 where ``\am = \ap = a`` because they are both connected by a taught rope. Solving this for ``a`` (by adding the equations together, using subtitution, etc.) then gives:
 
-s
+```math
+{\yc a = \boxed{\frac{\mp - \mm}{\mp + \mm} g}}\, .
+```
+"""
+
+# ╔═╡ c57bc7df-f2ed-4907-9d19-d2193448421d
+md"""
+Subbing this into either equation above then gives us the tension in the rope:
+
+```math
+\begin{align*}
+\Ft &= \mm(a + g) \\
+&= \mm \left(\frac{\mp - \mm}{\mp + \mm}g + g\right) \\
+&= \mm g \left(\frac{\mp - \mm + \mp + \mm}{\mp + \mm}\right) \\
+&= {\yc \boxed{\frac{2\mm\mp}{\mp + \mm} g}} \, .
+\end{align*}
+```
 """
 
 # ╔═╡ 824d90b5-bab9-4836-be1a-ad06c04df77b
@@ -326,8 +342,9 @@ version = "17.4.0+0"
 # ╔═╡ Cell order:
 # ╟─1f691418-48e1-11ed-1ccb-1befe06c6780
 # ╠═31614f01-6f36-4fa4-9b97-80a2b617d719
-# ╠═d9dce311-1aa3-4f21-a855-9f5e1a55c14c
-# ╠═824d90b5-bab9-4836-be1a-ad06c04df77b
-# ╠═1f388e1f-ed11-4c24-945c-d14565aeb16a
+# ╟─d9dce311-1aa3-4f21-a855-9f5e1a55c14c
+# ╟─c57bc7df-f2ed-4907-9d19-d2193448421d
+# ╟─824d90b5-bab9-4836-be1a-ad06c04df77b
+# ╟─1f388e1f-ed11-4c24-945c-d14565aeb16a
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
