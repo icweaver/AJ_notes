@@ -1,15 +1,18 @@
 ### A Pluto.jl notebook ###
-# v0.19.12
+# v0.19.13
 
 using Markdown
 using InteractiveUtils
 
 # ╔═╡ 2ea3cfb5-9ae6-406d-8a4e-158268e5f395
-using PlutoUI
+begin
+	using PlutoUI
+	using MarkdownLiteral: @mdx
+end
 
 # ╔═╡ 4451f4a3-d9de-4f39-8135-db932d93cf7e
-md"""
-# AP Calc Notes -- Lauren 🍊
+@mdx """
+<h6 style="font-size:2.5rem">AP Calc Notes -- Lauren 🍊</h6>
 
 Hey Lauren, here are some quick notes from our sessions that I will try to organize here.
 """
@@ -19,18 +22,21 @@ md"""
 # 2022/10/02
 """
 
-# ╔═╡ 40b9d332-429c-11ed-1a57-9568b04480a3
+# ╔═╡ 2f3e6143-b024-4465-8491-3cdc0a3bab9d
 md"""
 ## Derivative substitution
+"""
 
-```math
-\newcommand{\d}{\mathop{\mathrm{d}\!}}
-```
-
+# ╔═╡ 69150fa8-49ff-4879-a8b8-2efc9f2e0326
+md"""
+For this problem we have ``\newcommand{\d}{\mathop{\mathrm{d}\!}}``
 !!! tip "Question" 
 	What is ``f'(x)`` if ``\frac{\d}{\d x}\left[f(3x)\right] = 6x``?
+"""
 
-Ok, for this problem I think we can just do some good ol' chain rule and then u-substitution to deal with that ``3x`` business at the end.
+# ╔═╡ 40b9d332-429c-11ed-1a57-9568b04480a3
+md"""
+I think we can just do some good ol' chain rule and then u-substitution to deal with that ``3x`` business at the end.
 
 ```math
 \begin{align}
@@ -44,9 +50,12 @@ f'(u) &= \frac{2}{3} u \, .
 Since ``u`` is just a letter, this is symbolically the same as
 
 ```math
-\boxed{f'(x) = \frac{2}{3} x} \, .
+f'(x) = \boxed{\frac{2}{3} x} \, .
 ```
+"""
 
+# ╔═╡ a97584cb-9c3f-481c-8346-6b515b3121ac
+md"""
 !!! note
 	Incidentally, we could show this a bit more "rigorously" by actually writing out the transformation for the differential:
 	
@@ -82,7 +91,10 @@ Turns out, it's not so weird, it's just the chain rule hiding in disguise again!
 &= \frac{x}{{\bl |x|}} \, .
 \end{align}
 ```
+"""
 
+# ╔═╡ ff4557d3-52ea-4741-9b49-10bfcaf4b1c4
+md"""
 Pretty neat! The general expression for the derivative of ``|f(x)|`` then follows naturally from the chain rule:
 
 ```math
@@ -91,23 +103,25 @@ Pretty neat! The general expression for the derivative of ``|f(x)|`` then follow
 h(x) = |x|&,\ h'(x) = \frac{x}{|x|}, \\
 g(x) = f(x)&,\ g'(x) = f'(x), \\
 \frac{\d}{\d x}\left[f(x)\right] &= {\or h'(x)[g(x)]} \cdot g'(x) \\
-&= {\or \frac{f(x)}{\left|f(x)\right|}} \cdot f'(x) \quad.
+&= \boxed{{\or \frac{f(x)}{\left|f(x)\right|}} f'(x)}\, .
 \end{align}
 ```
 
 
-and we have our result from above!
+and we have our result from above ✔
 """
 
 # ╔═╡ 04e7af66-08a0-4cff-b828-2ffebec3d923
-TableOfContents()
+TableOfContents(title="Contents")
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
 [deps]
+MarkdownLiteral = "736d6165-7244-6769-4267-6b50796e6954"
 PlutoUI = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
 
 [compat]
+MarkdownLiteral = "~0.1.1"
 PlutoUI = "~0.7.43"
 """
 
@@ -117,7 +131,7 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.8.0"
 manifest_format = "2.0"
-project_hash = "da0f1787f1abb3f1cdc4109722909b0a763138ba"
+project_hash = "18a7377773b4cb6a9f642b5ac5e7962f6a005b5e"
 
 [[deps.AbstractPlutoDingetjes]]
 deps = ["Pkg"]
@@ -141,10 +155,21 @@ git-tree-sha1 = "eb7f0f8307f71fac7c606984ea5fb2817275d6e4"
 uuid = "3da002f7-5984-5a60-b8a6-cbb66c0b333f"
 version = "0.11.4"
 
+[[deps.CommonMark]]
+deps = ["Crayons", "JSON", "URIs"]
+git-tree-sha1 = "4cd7063c9bdebdbd55ede1af70f3c2f48fab4215"
+uuid = "a80b9123-70ca-4bc0-993e-6e3bcb318db6"
+version = "0.8.6"
+
 [[deps.CompilerSupportLibraries_jll]]
 deps = ["Artifacts", "Libdl"]
 uuid = "e66e0078-7015-5450-92f7-15fbd957f2ae"
 version = "0.5.2+0"
+
+[[deps.Crayons]]
+git-tree-sha1 = "249fe38abf76d48563e2f4556bebd215aa317e15"
+uuid = "a8cc5b0e-0ffa-5ad4-8c14-923d3ee1735f"
+version = "4.1.1"
 
 [[deps.Dates]]
 deps = ["Printf"]
@@ -224,6 +249,12 @@ uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
 [[deps.Markdown]]
 deps = ["Base64"]
 uuid = "d6f4376e-aef5-505a-96c1-9c027394607a"
+
+[[deps.MarkdownLiteral]]
+deps = ["CommonMark", "HypertextLiteral"]
+git-tree-sha1 = "0d3fa2dd374934b62ee16a4721fe68c418b92899"
+uuid = "736d6165-7244-6769-4267-6b50796e6954"
+version = "0.1.1"
 
 [[deps.MbedTLS_jll]]
 deps = ["Artifacts", "Libdl"]
@@ -317,6 +348,11 @@ git-tree-sha1 = "6bac775f2d42a611cdfcd1fb217ee719630c4175"
 uuid = "410a4b4d-49e4-4fbc-ab6d-cb71b17b3775"
 version = "0.1.6"
 
+[[deps.URIs]]
+git-tree-sha1 = "e59ecc5a41b000fa94423a578d29290c7266fc10"
+uuid = "5c2747f8-b7ea-4ff2-ba2e-563bfd36b1d4"
+version = "1.4.0"
+
 [[deps.UUIDs]]
 deps = ["Random", "SHA"]
 uuid = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
@@ -348,8 +384,12 @@ version = "17.4.0+0"
 # ╔═╡ Cell order:
 # ╟─4451f4a3-d9de-4f39-8135-db932d93cf7e
 # ╟─a0fb5e7e-15f5-49b1-bc22-769f55c5d253
+# ╟─2f3e6143-b024-4465-8491-3cdc0a3bab9d
+# ╟─69150fa8-49ff-4879-a8b8-2efc9f2e0326
 # ╟─40b9d332-429c-11ed-1a57-9568b04480a3
+# ╟─a97584cb-9c3f-481c-8346-6b515b3121ac
 # ╟─26fb1661-c2f6-4f90-809a-9a21dfe2016a
+# ╟─ff4557d3-52ea-4741-9b49-10bfcaf4b1c4
 # ╟─04e7af66-08a0-4cff-b828-2ffebec3d923
 # ╟─2ea3cfb5-9ae6-406d-8a4e-158268e5f395
 # ╟─00000000-0000-0000-0000-000000000001
