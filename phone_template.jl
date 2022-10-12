@@ -1,17 +1,17 @@
 ### A Pluto.jl notebook ###
-# v0.19.12
+# v0.19.13
 
 using Markdown
 using InteractiveUtils
 
 # ╔═╡ 2712f198-36ad-11ed-38f4-6dd42a65fe0c
-parent = "Lisa Wachtell"
+parent = "Alexandra"
 
 # ╔═╡ cc03d30e-4a9a-4235-8f05-a6c2663f6b74
-course = "AP Physics C"
+course = "Honors Physics"
 
 # ╔═╡ c1a044af-c035-4ee4-a3f6-db6a63efd705
-student = "Tobey"
+student = "Laird"
 
 # ╔═╡ 94e9d11d-22d0-4782-99e1-a20e9fed2a94
 ptext(s) = Markdown.MD(Markdown.Admonition("warning", " ", [s]))

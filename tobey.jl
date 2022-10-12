@@ -5,24 +5,36 @@ using Markdown
 using InteractiveUtils
 
 # ╔═╡ 1f388e1f-ed11-4c24-945c-d14565aeb16a
-using PlutoUI
+begin
+	using PlutoUI
+	using MarkdownLiteral: @mdx
+end
 
 # ╔═╡ 1f691418-48e1-11ed-1ccb-1befe06c6780
-md"""
-# AP Physics C Notes -- Tobey 🪐
+@mdx """
+<h6 style="font-size:2.5rem">AP Physics C Notes -- Tobey 🪐</h6> 
 
 Hey Tobey, here are some quick notes from our sessions that I will try to organize here.
 """
 
-# ╔═╡ 31614f01-6f36-4fa4-9b97-80a2b617d719
+# ╔═╡ 39a128b5-407b-41c6-992d-03232b2b8d29
 md"""
 # 2022/10/10
+"""
 
+# ╔═╡ be1e03b5-48ab-4604-b072-d90b05953048
+md"""
 ## Monkey in a tree 🐒
+"""
 
+# ╔═╡ 1f04497e-91e5-4bfc-af79-a3cc78c5d048
+md"""
 !!! question
 	We start with a monkey that is pulling on a rope connected to a box. What is the magnitude of the least acceleration that the monkey will need to *just* lift the box off the ground?
+"""
 
+# ╔═╡ 31614f01-6f36-4fa4-9b97-80a2b617d719
+md"""
 Ok, it turns out there are a few key things we can use here to tackle this problem:
 
 1) The box has just left the ground, so there will be no normal force acting on it
@@ -46,7 +58,10 @@ Applying these two assumptions gives us the following equations:
 &{\pc \mathrm{package:}\ \mp g - \Ft = \mp \cancelto{0}{\ap} = 0}
 \end{align*}
 ```
+"""
 
+# ╔═╡ ad3aefe7-fb88-409d-b32e-732209bc200b
+md"""
 !!! note
 	It's also pretty neat to see here that the sign convention doesn't matter. We can choose up to be positive, or along the rope instead, and still arrive at the same result. Here, we're just going with the latter.
 
@@ -63,7 +78,7 @@ md"""
 
 	Now what happens if the monkey stops climbing and just holds on for dear life?
 
-The acceleration of the package ``\pc (a_p)`` will certainly not be zero any more. Our two equations are now:
+The acceleration of the package ``\pc (a_p)`` will certainly not be zero anymore. Our two equations are now:
 
 ```math
 \begin{align*}
@@ -75,7 +90,7 @@ The acceleration of the package ``\pc (a_p)`` will certainly not be zero any mor
 where ``\am = \ap = a`` because they are both connected by a taught rope. Solving this for ``a`` (by adding the equations together, using substitution, etc.) then gives:
 
 ```math
-{\yc a = \boxed{\frac{\mp - \mm}{\mp + \mm} g}}\, .
+a = {\yc \boxed{\frac{\mp - \mm}{\mp + \mm} g}}\, .
 ```
 """
 
@@ -94,15 +109,17 @@ Subbing this into either equation above then gives us the tension in the rope:
 """
 
 # ╔═╡ 824d90b5-bab9-4836-be1a-ad06c04df77b
-TableOfContents()
+TableOfContents(title="Contents")
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
 [deps]
+MarkdownLiteral = "736d6165-7244-6769-4267-6b50796e6954"
 PlutoUI = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
 
 [compat]
-PlutoUI = "~0.7.43"
+MarkdownLiteral = "~0.1.1"
+PlutoUI = "~0.7.44"
 """
 
 # ╔═╡ 00000000-0000-0000-0000-000000000002
@@ -111,7 +128,7 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.8.0"
 manifest_format = "2.0"
-project_hash = "502a5e5263da26fcd619b7b7033f402a42a81ffc"
+project_hash = "c56075880f87fe8fc0a2e02bd1fe52fae97795b0"
 
 [[deps.AbstractPlutoDingetjes]]
 deps = ["Pkg"]
@@ -135,10 +152,21 @@ git-tree-sha1 = "eb7f0f8307f71fac7c606984ea5fb2817275d6e4"
 uuid = "3da002f7-5984-5a60-b8a6-cbb66c0b333f"
 version = "0.11.4"
 
+[[deps.CommonMark]]
+deps = ["Crayons", "JSON", "URIs"]
+git-tree-sha1 = "4cd7063c9bdebdbd55ede1af70f3c2f48fab4215"
+uuid = "a80b9123-70ca-4bc0-993e-6e3bcb318db6"
+version = "0.8.6"
+
 [[deps.CompilerSupportLibraries_jll]]
 deps = ["Artifacts", "Libdl"]
 uuid = "e66e0078-7015-5450-92f7-15fbd957f2ae"
 version = "0.5.2+0"
+
+[[deps.Crayons]]
+git-tree-sha1 = "249fe38abf76d48563e2f4556bebd215aa317e15"
+uuid = "a8cc5b0e-0ffa-5ad4-8c14-923d3ee1735f"
+version = "4.1.1"
 
 [[deps.Dates]]
 deps = ["Printf"]
@@ -219,6 +247,12 @@ uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
 deps = ["Base64"]
 uuid = "d6f4376e-aef5-505a-96c1-9c027394607a"
 
+[[deps.MarkdownLiteral]]
+deps = ["CommonMark", "HypertextLiteral"]
+git-tree-sha1 = "0d3fa2dd374934b62ee16a4721fe68c418b92899"
+uuid = "736d6165-7244-6769-4267-6b50796e6954"
+version = "0.1.1"
+
 [[deps.MbedTLS_jll]]
 deps = ["Artifacts", "Libdl"]
 uuid = "c8ffd9c3-330d-5841-b78e-0817d7145fa1"
@@ -253,9 +287,9 @@ version = "1.8.0"
 
 [[deps.PlutoUI]]
 deps = ["AbstractPlutoDingetjes", "Base64", "ColorTypes", "Dates", "Hyperscript", "HypertextLiteral", "IOCapture", "InteractiveUtils", "JSON", "Logging", "Markdown", "Random", "Reexport", "UUIDs"]
-git-tree-sha1 = "2777a5c2c91b3145f5aa75b61bb4c2eb38797136"
+git-tree-sha1 = "6e33d318cf8843dade925e35162992145b4eb12f"
 uuid = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
-version = "0.7.43"
+version = "0.7.44"
 
 [[deps.Printf]]
 deps = ["Unicode"]
@@ -311,6 +345,11 @@ git-tree-sha1 = "6bac775f2d42a611cdfcd1fb217ee719630c4175"
 uuid = "410a4b4d-49e4-4fbc-ab6d-cb71b17b3775"
 version = "0.1.6"
 
+[[deps.URIs]]
+git-tree-sha1 = "e59ecc5a41b000fa94423a578d29290c7266fc10"
+uuid = "5c2747f8-b7ea-4ff2-ba2e-563bfd36b1d4"
+version = "1.4.0"
+
 [[deps.UUIDs]]
 deps = ["Random", "SHA"]
 uuid = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
@@ -341,7 +380,11 @@ version = "17.4.0+0"
 
 # ╔═╡ Cell order:
 # ╟─1f691418-48e1-11ed-1ccb-1befe06c6780
+# ╟─39a128b5-407b-41c6-992d-03232b2b8d29
+# ╟─be1e03b5-48ab-4604-b072-d90b05953048
+# ╟─1f04497e-91e5-4bfc-af79-a3cc78c5d048
 # ╟─31614f01-6f36-4fa4-9b97-80a2b617d719
+# ╟─ad3aefe7-fb88-409d-b32e-732209bc200b
 # ╟─d9dce311-1aa3-4f21-a855-9f5e1a55c14c
 # ╟─c57bc7df-f2ed-4907-9d19-d2193448421d
 # ╟─824d90b5-bab9-4836-be1a-ad06c04df77b
