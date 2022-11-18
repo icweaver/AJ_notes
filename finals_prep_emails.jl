@@ -35,6 +35,11 @@ md"""
 ## Kaitlyn
 """
 
+# ╔═╡ 9c1ec121-d805-400a-8e84-95cc65253d8c
+md"""
+## Laird
+"""
+
 # ╔═╡ 21908d94-6765-11ed-054f-175cdeb0a423
 function email_template(;
 	parent, student, subj_pronoun, obj_pronoun, experience, next_session,
@@ -113,6 +118,16 @@ email_template(
 	obj_pronoun = "her",
 	experience = "We had a very productive session on Tuesday. After reviewing the dynamics of banked curves, we turned to solidifying our understanding of Kepler's three laws of orbital motion.",
 	next_session = "Sunday November 27th, 6:45 - 8:15 pm",
+)
+
+# ╔═╡ 27741655-3ea7-4527-b22f-1bba7e4de50e
+email_template(
+	parent = "Alexandra",
+	student = "Laird",
+	subj_pronoun = "he",
+	obj_pronoun = "him",
+	experience = "We had a very productive session yesterday. After reviewing the main principles of the work-energy theorem, Laird was able to successfully complete every practice problem I gave him on the topic.",
+	next_session = "Thursday December 1st, 3:00 - 4:30 pm",
 )
 
 # ╔═╡ 3729bfca-9ff3-42bd-bbae-e7b1520c5a9c
@@ -406,6 +421,8 @@ version = "17.4.0+0"
 # ╟─343f5e87-26a0-406c-ad8a-a6b487e13862
 # ╟─63ed1b36-3dc8-454e-b3d4-244607690088
 # ╟─abb4699c-e9e5-479c-88ef-19a378dfe4b7
+# ╟─9c1ec121-d805-400a-8e84-95cc65253d8c
+# ╠═27741655-3ea7-4527-b22f-1bba7e4de50e
 # ╟─21908d94-6765-11ed-054f-175cdeb0a423
 # ╠═3729bfca-9ff3-42bd-bbae-e7b1520c5a9c
 # ╠═39734b69-8227-4ee5-80c2-6186fa5249da
