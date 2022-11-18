@@ -191,7 +191,19 @@ email_template(
 )
 
 # ╔═╡ dc3c57dc-29ce-4efd-a703-42432a63c0ea
+md"""
+## Ori
+"""
 
+# ╔═╡ 0959e28e-d2b9-447d-9250-b0cde3ab1441
+email_template(
+	parent = "Alon and Adi",
+	student = "Ori",
+	subj_pronoun = "he",
+	obj_pronoun = "him",
+	experience = "We had a very productive online session on Wednesday. After reviewing the main principles of the chain rule and graphical interprations of the first and second derivative, we turned to current topics in his courses, including analyzing the behaviour of functions based on their concavity.",
+	next_session = "Wednesday November 23rd, 1:00 - 2:30 pm",
+)
 
 # ╔═╡ 3729bfca-9ff3-42bd-bbae-e7b1520c5a9c
 TableOfContents(; title="Finals Prep 📧")
@@ -495,7 +507,8 @@ version = "17.4.0+0"
 # ╟─514cbef9-cbdb-4999-b69c-7bdd64110567
 # ╟─85813e2a-a9ec-42f6-8229-de42b9ad296b
 # ╟─5798e5c8-7936-4da3-a28e-0804e0e36a3e
-# ╠═dc3c57dc-29ce-4efd-a703-42432a63c0ea
+# ╟─dc3c57dc-29ce-4efd-a703-42432a63c0ea
+# ╟─0959e28e-d2b9-447d-9250-b0cde3ab1441
 # ╠═3729bfca-9ff3-42bd-bbae-e7b1520c5a9c
 # ╠═39734b69-8227-4ee5-80c2-6186fa5249da
 # ╟─00000000-0000-0000-0000-000000000001
