@@ -40,6 +40,11 @@ md"""
 ## Laird
 """
 
+# ╔═╡ e47f3843-156c-41f0-b49d-af5ebf42aa39
+md"""
+## Lauren
+"""
+
 # ╔═╡ 21908d94-6765-11ed-054f-175cdeb0a423
 function email_template(;
 	parent, student, subj_pronoun, obj_pronoun, experience, next_session,
@@ -128,6 +133,31 @@ email_template(
 	obj_pronoun = "him",
 	experience = "We had a very productive session yesterday. After reviewing the main principles of the work-energy theorem, Laird was able to successfully complete every practice problem I gave him on the topic.",
 	next_session = "Thursday December 1st, 3:00 - 4:30 pm",
+)
+
+# ╔═╡ c728ee21-da4e-47ff-94a7-9852ae26f5cc
+email_template(
+	parent = "Susie",
+	student = "Lauren",
+	subj_pronoun = "she",
+	obj_pronoun = "her",
+	experience = "We had a very productive session the Sunday before last. After reviewing inverse functions and their derivatives, we explored alternative methods to determining the limiting behaviour of functions to prepare for the case when other methods may fail.",
+	next_session = "Sunday December 4th, 1:00 - 2:30 pm",
+)
+
+# ╔═╡ b906ea69-f388-4fdf-8e51-e8c84b93a3be
+md"""
+## Marianne
+"""
+
+# ╔═╡ 327d6c45-c408-447a-8a04-92dbef9e1d7a
+email_template(
+	parent = "Jennifer",
+	student = "Marianne",
+	subj_pronoun = "she",
+	obj_pronoun = "her",
+	experience = "We had a very productive session the Sunday before last. Despite still getting over her cold, Marianne was still able to actively participate during our review of implicit differentiation. We were then able to continue on to work on the new topic of related rates together. I hope that she was able to get some good rest and is feeling better!",
+	next_session = "Sunday November 20th, 5:00 - 6:00 pm",
 )
 
 # ╔═╡ 3729bfca-9ff3-42bd-bbae-e7b1520c5a9c
@@ -422,8 +452,12 @@ version = "17.4.0+0"
 # ╟─63ed1b36-3dc8-454e-b3d4-244607690088
 # ╟─abb4699c-e9e5-479c-88ef-19a378dfe4b7
 # ╟─9c1ec121-d805-400a-8e84-95cc65253d8c
-# ╠═27741655-3ea7-4527-b22f-1bba7e4de50e
+# ╟─27741655-3ea7-4527-b22f-1bba7e4de50e
+# ╟─e47f3843-156c-41f0-b49d-af5ebf42aa39
+# ╟─c728ee21-da4e-47ff-94a7-9852ae26f5cc
 # ╟─21908d94-6765-11ed-054f-175cdeb0a423
+# ╟─b906ea69-f388-4fdf-8e51-e8c84b93a3be
+# ╟─327d6c45-c408-447a-8a04-92dbef9e1d7a
 # ╠═3729bfca-9ff3-42bd-bbae-e7b1520c5a9c
 # ╠═39734b69-8227-4ee5-80c2-6186fa5249da
 # ╟─00000000-0000-0000-0000-000000000001
