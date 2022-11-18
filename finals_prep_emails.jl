@@ -205,6 +205,38 @@ email_template(
 	next_session = "Wednesday November 23rd, 1:00 - 2:30 pm",
 )
 
+# ╔═╡ 6b8fc068-b54d-47fc-8130-915630fe46f5
+md"""
+## Shan
+"""
+
+# ╔═╡ cd773ffe-f67d-4c7f-bc00-205679d11941
+email_template(
+	parent = "Vini",
+	student = "Shan",
+	subj_pronoun = "he",
+	obj_pronoun = "him",
+	experience = "I hope that Shan is feeling better! We had a very productive session last Thursday. After completing his projectile motion lab, we started taking a look at upcoming topics in his class involving free fall motion and gravitation.",
+	next_session = "Monday November 21st, 10:00 - 11:00 am",
+)
+
+# ╔═╡ e3e301d2-15b0-44c1-bd5b-e8c618bfd534
+md"""
+!!! note
+	Update after session today
+## Tobey
+"""
+
+# ╔═╡ d14d6b18-b91a-4209-9c71-a7764f69a1e3
+email_template(
+	parent = "Lisa",
+	student = "Tobey",
+	subj_pronoun = "he",
+	obj_pronoun = "him",
+	experience = "We had a very productive online session last Saturday. After reviewing the main principles of the work-energy theorem and gravitation, we got a jump start on applying integral calculus techniques to interpret and understand these systems on a deeper level.",
+	next_session = "Friday November 25th, 3:30 - 5:00 pm",
+)
+
 # ╔═╡ 3729bfca-9ff3-42bd-bbae-e7b1520c5a9c
 TableOfContents(; title="Finals Prep 📧")
 
@@ -509,6 +541,10 @@ version = "17.4.0+0"
 # ╟─5798e5c8-7936-4da3-a28e-0804e0e36a3e
 # ╟─dc3c57dc-29ce-4efd-a703-42432a63c0ea
 # ╟─0959e28e-d2b9-447d-9250-b0cde3ab1441
+# ╟─6b8fc068-b54d-47fc-8130-915630fe46f5
+# ╟─cd773ffe-f67d-4c7f-bc00-205679d11941
+# ╟─e3e301d2-15b0-44c1-bd5b-e8c618bfd534
+# ╟─d14d6b18-b91a-4209-9c71-a7764f69a1e3
 # ╠═3729bfca-9ff3-42bd-bbae-e7b1520c5a9c
 # ╠═39734b69-8227-4ee5-80c2-6186fa5249da
 # ╟─00000000-0000-0000-0000-000000000001
