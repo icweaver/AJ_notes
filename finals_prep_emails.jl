@@ -25,6 +25,16 @@ md"""
 ## Isabella
 """
 
+# ╔═╡ d9c6e8e4-8f55-42ca-a441-47d2594535cb
+md"""
+## Jack
+"""
+
+# ╔═╡ 63ed1b36-3dc8-454e-b3d4-244607690088
+md"""
+## Kaitlyn
+"""
+
 # ╔═╡ 21908d94-6765-11ed-054f-175cdeb0a423
 function email_template(;
 	parent, student, subj_pronoun, obj_pronoun, experience, next_session,
@@ -83,6 +93,26 @@ email_template(
 	obj_pronoun = "her",
 	experience = "We had a very productive session on Tuesday. After going through the new concepts in optimization techniques, Isabella was able to successfully complete every practice problem I gave her on the topic.",
 	next_session = "Tueday November 22nd, 3:15 - 4:30 pm",
+)
+
+# ╔═╡ 343f5e87-26a0-406c-ad8a-a6b487e13862
+email_template(
+	parent = "David",
+	student = "Jack",
+	subj_pronoun = "he",
+	obj_pronoun = "him",
+	experience = "We had a very productive session the Sunday before last. After cementing the process of writing out our steps in an organized, reproducible fashion, we turned to tackling upcoming topics in Jack's class, including graphing and algebraically manipulating functions in the complex plane.",
+	next_session = "Sunday November 20th, 3:00 - 4:30 pm",
+)
+
+# ╔═╡ abb4699c-e9e5-479c-88ef-19a378dfe4b7
+email_template(
+	parent = "Laura",
+	student = "Kaitlyn",
+	subj_pronoun = "she",
+	obj_pronoun = "her",
+	experience = "We had a very productive session on Tuesday. After reviewing the dynamics of banked curves, we turned to solidifying our understanding of Kepler's three laws of orbital motion.",
+	next_session = "Sunday November 27th, 6:45 - 8:15 pm",
 )
 
 # ╔═╡ 3729bfca-9ff3-42bd-bbae-e7b1520c5a9c
@@ -372,6 +402,10 @@ version = "17.4.0+0"
 # ╟─69c1e2ce-8ed0-47b1-b4f7-552b5b0a9d09
 # ╟─a908175d-878a-4cdf-aef3-35a673b08c6d
 # ╟─0456bca6-a4f9-402c-8634-6474d152d163
+# ╟─d9c6e8e4-8f55-42ca-a441-47d2594535cb
+# ╟─343f5e87-26a0-406c-ad8a-a6b487e13862
+# ╟─63ed1b36-3dc8-454e-b3d4-244607690088
+# ╟─abb4699c-e9e5-479c-88ef-19a378dfe4b7
 # ╟─21908d94-6765-11ed-054f-175cdeb0a423
 # ╠═3729bfca-9ff3-42bd-bbae-e7b1520c5a9c
 # ╠═39734b69-8227-4ee5-80c2-6186fa5249da
