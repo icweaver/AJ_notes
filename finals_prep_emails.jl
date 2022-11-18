@@ -121,7 +121,7 @@ email_template(
 	student = "Kaitlyn",
 	subj_pronoun = "she",
 	obj_pronoun = "her",
-	experience = "We had a very productive session on Tuesday. After reviewing the dynamics of banked curves, we turned to solidifying our understanding of Kepler's three laws of orbital motion.",
+	experience = "We had a very productive session on Tuesday. After reviewing the dynamics of banked curves, Kaitlyn and I turned to solidifying our understanding of Kepler's three laws of orbital motion.",
 	next_session = "Sunday November 27th, 6:45 - 8:15 pm",
 )
 
@@ -141,7 +141,7 @@ email_template(
 	student = "Lauren",
 	subj_pronoun = "she",
 	obj_pronoun = "her",
-	experience = "We had a very productive session the Sunday before last. After reviewing inverse functions and their derivatives, we explored alternative methods to determining the limiting behaviour of functions to prepare for the case when other methods may fail.",
+	experience = "We had a very productive session the Sunday before last. After reviewing inverse functions and their derivatives, Lauren and I explored alternative methods to determining the limiting behaviour of functions to prepare for the case when other methods may fail.",
 	next_session = "Sunday December 4th, 1:00 - 2:30 pm",
 )
 
