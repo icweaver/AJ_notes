@@ -175,6 +175,24 @@ email_template(
 	next_session = "Wednesday November 23rd, 6:30 - 8:00 pm",
 )
 
+# ╔═╡ 85813e2a-a9ec-42f6-8229-de42b9ad296b
+md"""
+## Oran
+"""
+
+# ╔═╡ 5798e5c8-7936-4da3-a28e-0804e0e36a3e
+email_template(
+	parent = "Luke and Megan",
+	student = "Oran",
+	subj_pronoun = "he",
+	obj_pronoun = "him",
+	experience = "We had a very productive session on Tuesday. After reviewing our main differentiation techniques, we turned to upcoming topics in his courses, including analyzing the behaviour of damped oscillators.",
+	next_session = "Tuesday November 22nd, 4:30 - 6:00 pm",
+)
+
+# ╔═╡ dc3c57dc-29ce-4efd-a703-42432a63c0ea
+
+
 # ╔═╡ 3729bfca-9ff3-42bd-bbae-e7b1520c5a9c
 TableOfContents(; title="Finals Prep 📧")
 
@@ -475,6 +493,9 @@ version = "17.4.0+0"
 # ╟─327d6c45-c408-447a-8a04-92dbef9e1d7a
 # ╟─3ea0416a-6c80-4a28-a8ba-1b2a2e95d23f
 # ╟─514cbef9-cbdb-4999-b69c-7bdd64110567
+# ╟─85813e2a-a9ec-42f6-8229-de42b9ad296b
+# ╟─5798e5c8-7936-4da3-a28e-0804e0e36a3e
+# ╠═dc3c57dc-29ce-4efd-a703-42432a63c0ea
 # ╠═3729bfca-9ff3-42bd-bbae-e7b1520c5a9c
 # ╠═39734b69-8227-4ee5-80c2-6186fa5249da
 # ╟─00000000-0000-0000-0000-000000000001
