@@ -160,6 +160,21 @@ email_template(
 	next_session = "Sunday November 20th, 5:00 - 6:00 pm",
 )
 
+# ╔═╡ 3ea0416a-6c80-4a28-a8ba-1b2a2e95d23f
+md"""
+## Nadim
+"""
+
+# ╔═╡ 514cbef9-cbdb-4999-b69c-7bdd64110567
+email_template(
+	parent = "Shireen",
+	student = "Nadim",
+	subj_pronoun = "he",
+	obj_pronoun = "him",
+	experience = "We had a very productive session on Wednesday. After completing our review on integrating the moments of inertia of uniform solids, we turned to problems describing the dynamics of rolling objects. Afterwards, we got a jump start on upcoming topics in his course, including torque, angular momentum, and their three dimensional vector representations.",
+	next_session = "Wednesday November 23rd, 6:30 - 8:00 pm",
+)
+
 # ╔═╡ 3729bfca-9ff3-42bd-bbae-e7b1520c5a9c
 TableOfContents(; title="Finals Prep 📧")
 
@@ -458,6 +473,8 @@ version = "17.4.0+0"
 # ╟─21908d94-6765-11ed-054f-175cdeb0a423
 # ╟─b906ea69-f388-4fdf-8e51-e8c84b93a3be
 # ╟─327d6c45-c408-447a-8a04-92dbef9e1d7a
+# ╟─3ea0416a-6c80-4a28-a8ba-1b2a2e95d23f
+# ╟─514cbef9-cbdb-4999-b69c-7bdd64110567
 # ╠═3729bfca-9ff3-42bd-bbae-e7b1520c5a9c
 # ╠═39734b69-8227-4ee5-80c2-6186fa5249da
 # ╟─00000000-0000-0000-0000-000000000001
