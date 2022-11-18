@@ -20,6 +20,11 @@ md"""
 ## Ellie
 """
 
+# ╔═╡ a908175d-878a-4cdf-aef3-35a673b08c6d
+md"""
+## Isabella
+"""
+
 # ╔═╡ 21908d94-6765-11ed-054f-175cdeb0a423
 function email_template(;
 	parent, student, subj_pronoun, obj_pronoun, experience, next_session,
@@ -68,6 +73,16 @@ email_template(
 	obj_pronoun = "her",
 	experience = "We had a very productive session yesterday. After completing our review of projectile motion in two dimensions, we got a head start on her upcoming topic on energy and linear momentum conservation.",
 	next_session = "Thursday December 1st, 5:30 - 7:00 pm",
+)
+
+# ╔═╡ 0456bca6-a4f9-402c-8634-6474d152d163
+email_template(
+	parent = "Ligia",
+	student = "Isabella",
+	subj_pronoun = "she",
+	obj_pronoun = "her",
+	experience = "We had a very productive session on Tuesday. After going through the new concepts in optimization techniques, Isabella was able to successfully complete every practice problem I gave her on the topic.",
+	next_session = "Tueday November 22nd, 3:15 - 4:30 pm",
 )
 
 # ╔═╡ 3729bfca-9ff3-42bd-bbae-e7b1520c5a9c
@@ -355,6 +370,8 @@ version = "17.4.0+0"
 # ╟─2bf8d68a-995f-4cb4-a2a4-d17955aaa71f
 # ╟─2678a46e-2735-4bfd-9f22-89995da7d441
 # ╟─69c1e2ce-8ed0-47b1-b4f7-552b5b0a9d09
+# ╟─a908175d-878a-4cdf-aef3-35a673b08c6d
+# ╟─0456bca6-a4f9-402c-8634-6474d152d163
 # ╟─21908d94-6765-11ed-054f-175cdeb0a423
 # ╠═3729bfca-9ff3-42bd-bbae-e7b1520c5a9c
 # ╠═39734b69-8227-4ee5-80c2-6186fa5249da
