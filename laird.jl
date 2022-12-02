@@ -18,7 +18,12 @@ Hey Laird, I put together this quick page to help share follow-up notes from our
 md"""
 ## 2022/12/01
 
-We left off on this problem with a merry-go-round and were solveing for the period ``(P)`` required to lift our weight up through an angle ``(\theta)``. We got most of the way there by first solving for the circular speed ``(v)``
+We left off on this problem with a merry-go-round and were solving for the period ``(P)`` required to lift our weight up through an angle ``(\theta)``.
+
+
+![](https://lh3.googleusercontent.com/ZzthKfWM_7eLswTe6N1xzTYQ38bHcw-Q1PN7zVnRhI6Q5qU23ltezMO0Mu9i8e46iEdYAvCJBcGMSJ4_1Ck82qEBRwCnAj-ksTHL1w8evMwWqbhxIFK4Jg3k4Q-oe0sgXi0TX2ii21i_ldypG8r_fY1pI7vBDFhX6WQzy_FUGZrcakFx7cifETCz1HoUoFgmPqxWlTt9wy_t8OSLo3ERgbHS9iC1YopfRfInLWaZCf6bd0GBcIMb8O9uzU-KDiTCyUl-Hzv_Sog7DzapM0n1Gyda7aC6wlums9beJmB7ML5gknRhP9y8AXbB2h0D7csry5Uu_YEFIpIyWgMktfdo9Y2Gbh_H_Dc1EtyEbcWqv48XbDN395BaQ5mvnHU11D8DC8iuD123bYv1hw8gEi-AntW9pyVUutPTAerxJZTxYZoTwLHEQJpPPX1ikue8RXoMgWCzJXF6hXbtvb_8lb50i8vZnfe5rNOzUFnodOlJEz5NoXt71abj3ixFM__fcHPvGTfaMgAgDOFi8NvXg8RTxXkkS7SETnzcPxq7ZJ0P7eg1azOUSugDWdWbRyyFA2j25IWsgF16bOHzaELcWP45FkhTMknKU4FAb_-y6ghKazZXPB98KCBod1tmgpKUb7YxldqVMYTw4xGNnN2I7Y69gDJIYIxOisRyO_JHuB_Z1qpYo18PdlGlkhzODg_ZkrbGjn-rHcTRe6UcHXbiei28f1ohEh_pTa7Y73wPLvNZj32A8J6DoVAfcwmBpOHPg8H_y_sdgZpCCg5Y-9CnZhaUeKxnaoJOxzaKqvymdzgsohI9txeuhYdpA7U0LGCjPBPhekwXMe2L-XU-xzwSWVrGK6RqPw8DOKzuW6yD7WEF8N00Mbz6rmdQ6BtKwQIbjQYrtDpmBBiK1C236q2Z_zuI2_UPyBy_F7b8iojiT_BfhMIu0chJ03pjJoq0PyR7ca1UeJY-Nz_XanDFKz8f2jL0mA=w1417-h777-no?authuser=0)
+
+We got most of the way there by first solving for the circular speed ``(v)``
 
 ```math
 \begin{align}
@@ -39,7 +44,7 @@ To bring this home, all we need to do now is just relate it to the period and so
 P &= \frac{2π\left(r + l\sin\theta\right)}{v} \\
 &= \frac{2π\left(r + l\sin\theta\right)}{\sqrt{\left(r + l\sin\theta\right) g \tan\theta}} \\
 &= 2\pi\sqrt{\frac{r + l\sin\theta}{g \tan\theta}} \\
-&\approx \boxed{7 \ \mathrm{seconds}} \, .
+&\approx \color{orange}{\boxed{7 \ \mathrm{seconds}}} \, .
 \end{align}
 ```
 """
@@ -308,7 +313,7 @@ version = "17.4.0+0"
 # ╔═╡ Cell order:
 # ╟─e723e8df-9721-4186-8825-3c4ec27e6e2e
 # ╟─edffb4c4-f2f6-4814-aa99-e4d6c90e2948
-# ╟─27f721c1-4755-4980-9946-783de2e62185
+# ╠═27f721c1-4755-4980-9946-783de2e62185
 # ╟─e46859e4-57f4-4ee7-bf18-2624eee4757e
 # ╟─8a530ac2-71db-11ed-393a-15e72baaca65
 # ╟─00000000-0000-0000-0000-000000000001
