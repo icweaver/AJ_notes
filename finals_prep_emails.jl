@@ -152,7 +152,7 @@ md"""
 
 # ╔═╡ 327d6c45-c408-447a-8a04-92dbef9e1d7a
 email_template(
-	parent = "Jennifer",
+	parent = "Jennifer and Daniel",
 	student = "Marianne",
 	subj_pronoun = "she",
 	obj_pronoun = "her",
@@ -171,7 +171,7 @@ email_template(
 	student = "Nadim",
 	subj_pronoun = "he",
 	obj_pronoun = "him",
-	experience = "We had a very productive session on Wednesday. After completing our review on integrating the moments of inertia of uniform solids, we turned to problems describing the dynamics of rolling objects. Afterwards, we got a jump start on upcoming topics in his course, including torque, angular momentum, and their three dimensional vector representations.",
+	experience = "We had a very productive session on Wednesday. After completing our review on integrating the moments of inertia of uniform solids, Nadim and I turned to problems describing the dynamics of rolling objects. Afterwards, we got a jump start on upcoming topics in his course, including torque, angular momentum, and their three dimensional vector representations.",
 	next_session = "Wednesday November 23rd, 6:30 - 8:00 pm",
 )
 
@@ -186,7 +186,7 @@ email_template(
 	student = "Oran",
 	subj_pronoun = "he",
 	obj_pronoun = "him",
-	experience = "We had a very productive session on Tuesday. After reviewing our main differentiation techniques, we turned to upcoming topics in his courses, including analyzing the behaviour of damped oscillators.",
+	experience = "We had a very productive session on Tuesday. After reviewing our main differentiation techniques, Oran and I turned to upcoming topics in his courses, including analyzing the behaviour of damped oscillators.",
 	next_session = "Tuesday November 22nd, 4:30 - 6:00 pm",
 )
 
@@ -201,7 +201,7 @@ email_template(
 	student = "Ori",
 	subj_pronoun = "he",
 	obj_pronoun = "him",
-	experience = "We had a very productive online session on Wednesday. After reviewing the main principles of the chain rule and graphical interprations of the first and second derivative, we turned to current topics in his courses, including analyzing the behaviour of functions based on their concavity.",
+	experience = "We had a very productive online session on Wednesday. After reviewing the main principles of the chain rule and graphical interprations of the first and second derivative, Ori and I turned to current topics in his courses, including analyzing the behaviour of functions based on their concavity.",
 	next_session = "Wednesday November 23rd, 1:00 - 2:30 pm",
 )
 
@@ -233,8 +233,8 @@ email_template(
 	student = "Tobey",
 	subj_pronoun = "he",
 	obj_pronoun = "him",
-	experience = "We had a very productive online session last Saturday. After reviewing the main principles of the work-energy theorem and gravitation, we got a jump start on applying integral calculus techniques to interpret and understand these systems on a deeper level.",
-	next_session = "Friday November 25th, 3:30 - 5:00 pm",
+	experience = "We had a very productive online session last Saturday and session today. After reviewing the main principles of the work-energy theorem and gravitation, we got a jump start on applying integral calculus techniques to interpret and understand these systems on a deeper level. During session today, we started looking ahead to topics involving conservation of linear momentum.",
+	next_session = "Friday December 2nd, 3:30 - 5:00 pm",
 )
 
 # ╔═╡ 3729bfca-9ff3-42bd-bbae-e7b1520c5a9c
@@ -257,7 +257,7 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.8.0"
 manifest_format = "2.0"
-project_hash = "18a7377773b4cb6a9f642b5ac5e7962f6a005b5e"
+project_hash = "cfe56b7664150e6e37de14f15743d90336921a63"
 
 [[deps.AbstractPlutoDingetjes]]
 deps = ["Pkg"]
