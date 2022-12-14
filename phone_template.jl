@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.19.14
+# v0.19.16
 
 using Markdown
 using InteractiveUtils
@@ -8,13 +8,13 @@ using InteractiveUtils
 using MarkdownLiteral:@mdx
 
 # ╔═╡ 2712f198-36ad-11ed-38f4-6dd42a65fe0c
-parent = "Yinna Zhou"
+parent = "Sherry and Chris"
 
 # ╔═╡ c1a044af-c035-4ee4-a3f6-db6a63efd705
-student = "Ethan Qian"
+student = "Alena"
 
 # ╔═╡ cc03d30e-4a9a-4235-8f05-a6c2663f6b74
-course = "AP Physics 1"
+course = "Physics Honors"
 
 # ╔═╡ 21181612-8b5f-4bcc-b265-732cffb4585b
 @mdx """
