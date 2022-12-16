@@ -30,7 +30,7 @@ function mid_year_template(;
 	$(student) and I are not planning to meet over Winter Break. During that time, I hope that $(student) gets some much deserved rest!
 	
 	**Next Semester**\\
-	I will be on break from January 5th - 9th, so the next available date that I can meet with $(student) will be on $(resume_date). If you would like to schedule a session before then or would like to make any other changes to the schedule, please feel free to reach out!
+	I will be on break from January 5th - 9th, so the next available date that we can meet will be on $(resume_date). If you would like to schedule a session before then or would like to make any other changes to the schedule, please feel free to reach out!
 	
 	Thank you again for the opportunity to work with $(student). Wishing you and your family good health and a happy break!
 	"""
