@@ -38,15 +38,15 @@ end
 
 # ╔═╡ b30f9973-86dd-488b-955c-332b36dbe290
 mid_year_template(
-	parent = "Alexandra",
-	student = "Laird",
-	subject = "Physics",
-	summary = "reviewed the fundamentals of kinematics, energy conservation, dynamics, and gravitation.",
+	parent = "Susie",
+	student = "Lauren",
+	subject = "Calculus",
+	summary = "reviewed word problems involving optimization and related rates.",
 	resources = """
-	* [The Physics Classroom](https://www.physicsclassroom.com/calcpad/problems) (I used this site back in high school and found it as a great starting point)
-	* [PhysicsTasks](https://physicstasks.eu/en/physics/mechanics) (A site with more complex problems with worked solutions, especially involving energy and linear momentum, dynamics, and the work-energy theorem)
+	* [Paul's Online Notes](https://tutorial.math.lamar.edu/classes/calci/relatedrates.aspx) (Practice problems on related rates)
+	* [Paul's Online Notes](https://tutorial.math.lamar.edu/classes/calci/shapeofgraphptii.aspx) (Practice problems on graph shapes/critical points/concavity)
 	""",
-	resume_date = "**Tuesday January 12th, 3:00 - 4:30 pm**",
+	resume_date = "**Friday January 13th, 3:30 - 5:00 pm**",
 )
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
