@@ -22,12 +22,12 @@ function mid_year_template(;
 	**Finals Prep Recap**\\
 	In preparation for $(student)'s final exams, we $(summary)
 
-	Below are a few review resources that I hope will be helpful!
+	Below are a few review resources that I hope $(student) will find helpful!
 
 	$(resources)
 
 	**Winter Break Plans**\\
-	$(student) and I are not planning to meet over Winter Break. During that time, I hope that $(student) gets some much deserved rest!
+	We are not planning to meet over Winter Break. During that time, I hope that $(student) gets some much deserved rest!
 	
 	**Next Semester**\\
 	I will be on break from January 5th - 9th, so the next available date that we can meet will be on $(resume_date). If you would like to schedule a session before then or would like to make any other changes to the schedule, please feel free to reach out!
@@ -38,10 +38,10 @@ end
 
 # ╔═╡ b30f9973-86dd-488b-955c-332b36dbe290
 mid_year_template(
-	parent = "Susie",
-	student = "Lauren",
-	subject = "Calculus",
-	summary = "reviewed word problems involving optimization and related rates.",
+	parent = "David",
+	student = "Jack",
+	subject = "Algebra 2/Trigonometry",
+	summary = "reviewed transformation of graphs and solving inequality equations algebraically",
 	resources = """
 	* [Paul's Online Notes](https://tutorial.math.lamar.edu/classes/calci/relatedrates.aspx) (Practice problems on related rates)
 	* [Paul's Online Notes](https://tutorial.math.lamar.edu/classes/calci/shapeofgraphptii.aspx) (Practice problems on graph shapes/critical points/concavity)
@@ -133,7 +133,7 @@ uuid = "4ec0a83e-493e-50e2-b9ac-8f72acf5a8f5"
 
 # ╔═╡ Cell order:
 # ╠═b30f9973-86dd-488b-955c-332b36dbe290
-# ╟─97077098-7c01-11ed-3934-8d1733b6deb9
+# ╠═97077098-7c01-11ed-3934-8d1733b6deb9
 # ╠═759f79b8-511e-4ec3-aa77-35d01fa1f8a4
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
