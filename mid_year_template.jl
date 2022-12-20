@@ -20,7 +20,7 @@ function mid_year_template(;
 	I hope all is well! It was a pleasure getting to work with $(student) on their $(subject) coursework this semester.
 	
 	**Finals Prep Recap**\\
-	In preparation for $(student)'s final exams, we $(summary)
+	In preparation for $(student)'s final exam, we $(summary)
 
 	Below are a few review resources that I hope $(student) will find helpful!
 
@@ -38,15 +38,16 @@ end
 
 # ╔═╡ b30f9973-86dd-488b-955c-332b36dbe290
 mid_year_template(
-	parent = "David",
-	student = "Jack",
-	subject = "Algebra 2/Trigonometry",
-	summary = "reviewed transformation of graphs and solving inequality equations algebraically",
+	parent = "Shireen",
+	student = "Nadim",
+	subject = "Physics",
+	summary = "reviewed challenge problems on torque, angular momentum, and gravitation",
 	resources = """
-	* [Paul's Online Notes](https://tutorial.math.lamar.edu/classes/calci/relatedrates.aspx) (Practice problems on related rates)
-	* [Paul's Online Notes](https://tutorial.math.lamar.edu/classes/calci/shapeofgraphptii.aspx) (Practice problems on graph shapes/critical points/concavity)
+	* [The Physics Classroom](https://www.physicsclassroom.com/calcpad/problems) (I used this site back in high school and found it as a great starting point)
+	* [PhysicsTasks](https://physicstasks.eu/1516/scissors-and-suspended-rod) (torque/angular momentum)
+	* [PhysicsTasks](https://physicstasks.eu/1758/hiding-place-for-a-nut) (gravitation)
 	""",
-	resume_date = "**Friday January 13th, 3:30 - 5:00 pm**",
+	resume_date = "**January 11th, 6:30 - 8:00 pm**",
 )
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
@@ -133,7 +134,7 @@ uuid = "4ec0a83e-493e-50e2-b9ac-8f72acf5a8f5"
 
 # ╔═╡ Cell order:
 # ╠═b30f9973-86dd-488b-955c-332b36dbe290
-# ╠═97077098-7c01-11ed-3934-8d1733b6deb9
+# ╟─97077098-7c01-11ed-3934-8d1733b6deb9
 # ╠═759f79b8-511e-4ec3-aa77-35d01fa1f8a4
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
