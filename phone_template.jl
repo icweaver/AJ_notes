@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.19.16
+# v0.19.25
 
 using Markdown
 using InteractiveUtils
@@ -8,13 +8,13 @@ using InteractiveUtils
 using MarkdownLiteral:@mdx
 
 # ╔═╡ 2712f198-36ad-11ed-38f4-6dd42a65fe0c
-parent = "Sherry and Chris"
+parent = "Ellen Dempsey"
 
 # ╔═╡ c1a044af-c035-4ee4-a3f6-db6a63efd705
-student = "Alena"
+student = "Lauren"
 
 # ╔═╡ cc03d30e-4a9a-4235-8f05-a6c2663f6b74
-course = "Physics Honors"
+course = "AP Physics 2"
 
 # ╔═╡ 21181612-8b5f-4bcc-b265-732cffb4585b
 @mdx """
@@ -89,7 +89,7 @@ MarkdownLiteral = "~0.1.1"
 PLUTO_MANIFEST_TOML_CONTENTS = """
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.8.0"
+julia_version = "1.8.5"
 manifest_format = "2.0"
 project_hash = "98709bc8c3fd601e617f99f783fac4178bc7c530"
 
@@ -154,12 +154,12 @@ uuid = "4ec0a83e-493e-50e2-b9ac-8f72acf5a8f5"
 """
 
 # ╔═╡ Cell order:
-# ╟─21181612-8b5f-4bcc-b265-732cffb4585b
 # ╠═7843bef1-69c8-4aac-9d9e-eeb29ede1c11
 # ╠═2712f198-36ad-11ed-38f4-6dd42a65fe0c
 # ╠═c1a044af-c035-4ee4-a3f6-db6a63efd705
 # ╠═cc03d30e-4a9a-4235-8f05-a6c2663f6b74
 # ╟─9d411040-6f39-4d80-a1c8-1dd44e0c23bc
+# ╟─21181612-8b5f-4bcc-b265-732cffb4585b
 # ╠═94e9d11d-22d0-4782-99e1-a20e9fed2a94
 # ╠═a891a44e-803c-4884-8e58-ed3715012032
 # ╟─00000000-0000-0000-0000-000000000001

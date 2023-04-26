@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.19.18
+# v0.19.25
 
 using Markdown
 using InteractiveUtils
@@ -40,9 +40,44 @@ md"""
 ## Laird
 """
 
+# ╔═╡ 96ff6438-f20c-4288-9ded-c036e94db9bf
+
+
 # ╔═╡ e47f3843-156c-41f0-b49d-af5ebf42aa39
 md"""
 ## Lauren
+"""
+
+# ╔═╡ b906ea69-f388-4fdf-8e51-e8c84b93a3be
+md"""
+## Marianne
+"""
+
+# ╔═╡ 3ea0416a-6c80-4a28-a8ba-1b2a2e95d23f
+md"""
+## Nadim
+"""
+
+# ╔═╡ 85813e2a-a9ec-42f6-8229-de42b9ad296b
+md"""
+## Oran
+"""
+
+# ╔═╡ dc3c57dc-29ce-4efd-a703-42432a63c0ea
+md"""
+## Ori
+"""
+
+# ╔═╡ 6b8fc068-b54d-47fc-8130-915630fe46f5
+md"""
+## Shan
+"""
+
+# ╔═╡ e3e301d2-15b0-44c1-bd5b-e8c618bfd534
+md"""
+!!! note
+	Update after session today
+## Tobey
 """
 
 # ╔═╡ 21908d94-6765-11ed-054f-175cdeb0a423
@@ -145,11 +180,6 @@ email_template(
 	next_session = "Sunday December 4th, 1:00 - 2:30 pm",
 )
 
-# ╔═╡ b906ea69-f388-4fdf-8e51-e8c84b93a3be
-md"""
-## Marianne
-"""
-
 # ╔═╡ 327d6c45-c408-447a-8a04-92dbef9e1d7a
 email_template(
 	parent = "Jennifer and Daniel",
@@ -159,11 +189,6 @@ email_template(
 	experience = "We had a very productive session the Sunday before last. Despite still getting over her cold, Marianne was still able to actively participate during our review of implicit differentiation. We were then able to continue on to work on the new topic of related rates together. I hope that she was able to get some good rest and is feeling better!",
 	next_session = "Sunday November 20th, 5:00 - 6:00 pm",
 )
-
-# ╔═╡ 3ea0416a-6c80-4a28-a8ba-1b2a2e95d23f
-md"""
-## Nadim
-"""
 
 # ╔═╡ 514cbef9-cbdb-4999-b69c-7bdd64110567
 email_template(
@@ -175,11 +200,6 @@ email_template(
 	next_session = "Wednesday November 23rd, 6:30 - 8:00 pm",
 )
 
-# ╔═╡ 85813e2a-a9ec-42f6-8229-de42b9ad296b
-md"""
-## Oran
-"""
-
 # ╔═╡ 5798e5c8-7936-4da3-a28e-0804e0e36a3e
 email_template(
 	parent = "Luke and Megan",
@@ -189,11 +209,6 @@ email_template(
 	experience = "We had a very productive session on Tuesday. After reviewing our main differentiation techniques, Oran and I turned to upcoming topics in his courses, including analyzing the behaviour of damped oscillators.",
 	next_session = "Tuesday November 22nd, 4:30 - 6:00 pm",
 )
-
-# ╔═╡ dc3c57dc-29ce-4efd-a703-42432a63c0ea
-md"""
-## Ori
-"""
 
 # ╔═╡ 0959e28e-d2b9-447d-9250-b0cde3ab1441
 email_template(
@@ -205,11 +220,6 @@ email_template(
 	next_session = "Wednesday November 23rd, 1:00 - 2:30 pm",
 )
 
-# ╔═╡ 6b8fc068-b54d-47fc-8130-915630fe46f5
-md"""
-## Shan
-"""
-
 # ╔═╡ cd773ffe-f67d-4c7f-bc00-205679d11941
 email_template(
 	parent = "Vini",
@@ -220,13 +230,6 @@ email_template(
 	next_session = "Monday November 21st, 10:00 - 11:00 am",
 )
 
-# ╔═╡ e3e301d2-15b0-44c1-bd5b-e8c618bfd534
-md"""
-!!! note
-	Update after session today
-## Tobey
-"""
-
 # ╔═╡ d14d6b18-b91a-4209-9c71-a7764f69a1e3
 email_template(
 	parent = "Lisa",
@@ -236,6 +239,39 @@ email_template(
 	experience = "We had a very productive online session last Saturday and session today. After reviewing the main principles of the work-energy theorem and gravitation, we got a jump start on applying integral calculus techniques to interpret and understand these systems on a deeper level. During session today, we started looking ahead to topics involving conservation of linear momentum.",
 	next_session = "Friday December 2nd, 3:30 - 5:00 pm",
 )
+
+# ╔═╡ aabe8910-05a4-43f3-8741-41ed4ec56e94
+function email_template2(parent, student)
+	@mdx """
+	```
+	$(student)'s Spring 2023 Finals Plan
+	```
+	Hi $(parent),
+
+	I hope this email finds you well! $(student) has been doing great in session and it has been a joy getting to work with them.
+	
+	As finals approach, we've found that planning is paramount to great results. In the coming sessions, we will review key topics and shore up content weaknesses. I want to make sure I have time to support $(student) leading up to finals, so please let me know if you would like to schedule extra sessions.
+	
+	One exercise we find helpful for students is to sit down with their class materials and a pad of paper to write out a list of all the topics that will likely appear on the final. As $(student) does this, they should rank each topic on a scale of 1-3 (1 being the least urgent, 3 being the most). This will not only help $(student) review the material, but also help them create an excellent study plan! We’ll start ASAP on the most urgent topics, utilizing a combination of online resources, practice problems, and past tests/quizzes. This should help $(student) generate questions that we can use to shore up any content gaps and improve their timing and efficiency when approaching test questions.
+
+	I look forward to working with $(student) through the end of the semester. Please let me know if you have any questions about the plan for $(student)!
+
+	Best, \\
+	Ian
+	"""
+end
+
+# ╔═╡ f6374464-9000-40dc-b894-5432d371fd60
+email_template2("Dana", "Alon")
+
+# ╔═╡ 25b22046-3484-4c82-9a1d-260fb54a1366
+email_template2("Yumi and John", "Ellie")
+
+# ╔═╡ 4e07dc0a-5fd1-490d-8578-2b5a85a9984e
+email_template2("Ligia", "Isabella")
+
+# ╔═╡ e64b902b-ad7a-4be9-8f64-a2cf4c0277ce
+email_template2("Vini", "Shan")
 
 # ╔═╡ 3729bfca-9ff3-42bd-bbae-e7b1520c5a9c
 TableOfContents(; title="Finals Prep 📧")
@@ -255,7 +291,7 @@ PlutoUI = "~0.7.48"
 PLUTO_MANIFEST_TOML_CONTENTS = """
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.8.0"
+julia_version = "1.8.5"
 manifest_format = "2.0"
 project_hash = "cfe56b7664150e6e37de14f15743d90336921a63"
 
@@ -290,7 +326,7 @@ version = "0.8.7"
 [[deps.CompilerSupportLibraries_jll]]
 deps = ["Artifacts", "Libdl"]
 uuid = "e66e0078-7015-5450-92f7-15fbd957f2ae"
-version = "0.5.2+0"
+version = "1.0.1+0"
 
 [[deps.Crayons]]
 git-tree-sha1 = "249fe38abf76d48563e2f4556bebd215aa317e15"
@@ -473,7 +509,7 @@ version = "1.0.0"
 [[deps.Tar]]
 deps = ["ArgTools", "SHA"]
 uuid = "a4e569a6-e804-4fa4-b0f3-eef7a1d5b13e"
-version = "1.10.0"
+version = "1.10.1"
 
 [[deps.Test]]
 deps = ["InteractiveUtils", "Logging", "Random", "Serialization"]
@@ -520,19 +556,22 @@ version = "17.4.0+0"
 # ╔═╡ Cell order:
 # ╟─24d29ea3-458b-4221-9ab2-01f0ef161432
 # ╠═2bf8d68a-995f-4cb4-a2a4-d17955aaa71f
+# ╠═f6374464-9000-40dc-b894-5432d371fd60
 # ╟─2678a46e-2735-4bfd-9f22-89995da7d441
 # ╠═69c1e2ce-8ed0-47b1-b4f7-552b5b0a9d09
+# ╠═25b22046-3484-4c82-9a1d-260fb54a1366
 # ╟─a908175d-878a-4cdf-aef3-35a673b08c6d
 # ╠═0456bca6-a4f9-402c-8634-6474d152d163
+# ╠═4e07dc0a-5fd1-490d-8578-2b5a85a9984e
 # ╟─d9c6e8e4-8f55-42ca-a441-47d2594535cb
 # ╠═343f5e87-26a0-406c-ad8a-a6b487e13862
 # ╟─63ed1b36-3dc8-454e-b3d4-244607690088
 # ╠═abb4699c-e9e5-479c-88ef-19a378dfe4b7
 # ╟─9c1ec121-d805-400a-8e84-95cc65253d8c
 # ╠═27741655-3ea7-4527-b22f-1bba7e4de50e
+# ╠═96ff6438-f20c-4288-9ded-c036e94db9bf
 # ╟─e47f3843-156c-41f0-b49d-af5ebf42aa39
 # ╠═c728ee21-da4e-47ff-94a7-9852ae26f5cc
-# ╟─21908d94-6765-11ed-054f-175cdeb0a423
 # ╟─b906ea69-f388-4fdf-8e51-e8c84b93a3be
 # ╠═327d6c45-c408-447a-8a04-92dbef9e1d7a
 # ╟─3ea0416a-6c80-4a28-a8ba-1b2a2e95d23f
@@ -543,8 +582,11 @@ version = "17.4.0+0"
 # ╠═0959e28e-d2b9-447d-9250-b0cde3ab1441
 # ╟─6b8fc068-b54d-47fc-8130-915630fe46f5
 # ╠═cd773ffe-f67d-4c7f-bc00-205679d11941
+# ╠═e64b902b-ad7a-4be9-8f64-a2cf4c0277ce
 # ╟─e3e301d2-15b0-44c1-bd5b-e8c618bfd534
-# ╠═d14d6b18-b91a-4209-9c71-a7764f69a1e3
+# ╟─d14d6b18-b91a-4209-9c71-a7764f69a1e3
+# ╟─21908d94-6765-11ed-054f-175cdeb0a423
+# ╠═aabe8910-05a4-43f3-8741-41ed4ec56e94
 # ╠═3729bfca-9ff3-42bd-bbae-e7b1520c5a9c
 # ╠═39734b69-8227-4ee5-80c2-6186fa5249da
 # ╟─00000000-0000-0000-0000-000000000001
