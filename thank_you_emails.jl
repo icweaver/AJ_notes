@@ -115,19 +115,20 @@ md"""
 ## Shan
 """
 
-# ╔═╡ e64b902b-ad7a-4be9-8f64-a2cf4c0277ce
-email_template2("Vini", "Shan")
-
 # ╔═╡ e3e301d2-15b0-44c1-bd5b-e8c618bfd534
 md"""
-!!! note
-	Update after session today
 ## Tobey
+"""
+
+# ╔═╡ 6a712c12-dc82-4965-91c0-5b2c7c18aabd
+md"""
+!!! warning
+	Switch to "It was a pleasure helping Tobey with AP Physics C last year"
 """
 
 # ╔═╡ 58f11438-2961-4060-9662-bec2c7713526
 md"""
-# Template
+# Templates
 """
 
 # ╔═╡ 21908d94-6765-11ed-054f-175cdeb0a423
@@ -143,7 +144,7 @@ function email_template(;guardians, guardian_emails, student, subject)
 
 	I hope you are enjoying a great start to your summer! It was a pleasure helping $(student) with $(subject) this year. If you could take some time to leave a review, we would greatly appreciate it -- as it helps us reach other students. Here's a [link](https://www.google.com/search?q=aj+tutoring+palo+alto&rlz=1C1RXQR_enUS1016US1016&oq=&aqs=chrome.0.69i59j46i175i199i512j0i512j46i175i199i512j46i433i512j69i61j69i60l2.1054j0j7&sourceid=chrome&ie=UTF-8#lrd=0x808fbae5d91aaed1:0x25053eafb3a85475,3,,,,) to our Google reviews. No worries if not! At AJ Tutoring, we pride ourselves on our continuing commitment to our students throughout the educational process.
 	
-	Unfortunately, I will be be pursuing other opportunities in science outreach next year and will not be working at AJ Tutoring. I want to ensure that this transition does not impact $(student)'s success in the next school year. We have several phenomenal academic and test preparation tutors who would be a great match for $(student). We would love to help place $(student) with a great tutoring match for any of next year's courses.
+	Unfortunately, I will be be pursuing other opportunities in science outreach and education next year and will not be working at AJ Tutoring. I want to ensure that this transition does not impact $(student)'s success in the next school year. We have several phenomenal academic and test preparation tutors who would be a great match for $(student). We would love to help place $(student) with a great tutoring match for any of next year's courses.
 	 
 	**If you are interested in tutoring for $(student) next year, please be sure to email my team leader Dana Francis at danafrancis@[ajtutoring.com](http://ajtutoring.com) or call us at (650) 331-3251.**
 	
@@ -220,30 +221,6 @@ email_template(
 	subject = "Physics Honors"
 )
 
-# ╔═╡ c728ee21-da4e-47ff-94a7-9852ae26f5cc
-email_template(
-	guardians = "Susie",
-	guardian_emails = "susie_hong@yahoo.com, susielevine@gmail.com",
-	student = "Lauren",
-	subject = "AP-Calculus-AB",
-)
-
-# ╔═╡ 514cbef9-cbdb-4999-b69c-7bdd64110567
-email_template(
-	guardians = "Shireen",
-	guardian_emails = "shireenbazzi@gmail.com",
-	student = "Nadim",
-	subject = "AP Physics C"
-)
-
-# ╔═╡ 5798e5c8-7936-4da3-a28e-0804e0e36a3e
-email_template(
-	guardians = "Luke and Megan",
-	guardian_emails = "lterra@stanford.edu, mterra@nuevaschool.org",
-	student = "Oran",
-	subject = "Calculus and Physics",
-)
-
 # ╔═╡ 0959e28e-d2b9-447d-9250-b0cde3ab1441
 email_template(
 	guardians = "Alon and Adi",
@@ -254,22 +231,65 @@ email_template(
 
 # ╔═╡ cd773ffe-f67d-4c7f-bc00-205679d11941
 email_template(
-	parent = "Vini",
+	guardians = "Vini",
+	guardian_emails = "Vini.jolly@gmail.com",
 	student = "Shan",
-	subj_pronoun = "he",
-	obj_pronoun = "him",
-	experience = "I hope that Shan is feeling better! We had a very productive session last Thursday. After completing his projectile motion lab, we started taking a look at upcoming topics in his class involving free fall motion and gravitation.",
-	next_session = "Monday November 21st, 10:00 - 11:00 am",
+	subject = "Physics Honors",
+)
+
+# ╔═╡ 212abe3a-3fb9-40d1-a520-29687ca035c2
+function email_template_senior(;guardians, guardian_emails, student, subject)
+	@mdx """
+	```
+	Subject: College Academic Support
+	to: $(guardian_emails)
+	cc: danafrancis@ajtutoring.com
+	bcc: ajtutoring@ajtutoring.solve360.com
+	```
+	Hi $(guardians),
+
+	I hope you are enjoying a great start to your summer! It was a pleasure helping $(student) with $(subject) this year. If you could take some time to leave a review, we would greatly appreciate it -- as it helps us reach other students. Here's a [link](https://www.google.com/search?q=aj+tutoring+palo+alto&rlz=1C1RXQR_enUS1016US1016&oq=&aqs=chrome.0.69i59j46i175i199i512j0i512j46i175i199i512j46i433i512j69i61j69i60l2.1054j0j7&sourceid=chrome&ie=UTF-8#lrd=0x808fbae5d91aaed1:0x25053eafb3a85475,3,,,,) to our Google reviews. No worries if not! At AJ Tutoring, we pride ourselves on our continuing commitment to our students throughout the educational process.
+	 
+	**If you are interested in additional support for $(student) next year, please be sure to call us at (650) 331-3251.**
+
+	Thank you so much again for the opportunity to work with $(student) this year, and I wish $(student) the best of luck in college. Have a wonderful summer!
+
+	
+	Thanks,\\
+	Ian
+	"""
+end
+
+# ╔═╡ c728ee21-da4e-47ff-94a7-9852ae26f5cc
+email_template_senior(
+	guardians = "Susie",
+	guardian_emails = "susie_hong@yahoo.com, susielevine@gmail.com",
+	student = "Lauren",
+	subject = "AP-Calculus-AB",
+)
+
+# ╔═╡ 514cbef9-cbdb-4999-b69c-7bdd64110567
+email_template_senior(
+	guardians = "Shireen",
+	guardian_emails = "shireenbazzi@gmail.com",
+	student = "Nadim",
+	subject = "AP Physics C"
+)
+
+# ╔═╡ 5798e5c8-7936-4da3-a28e-0804e0e36a3e
+email_template_senior(
+	guardians = "Luke and Megan",
+	guardian_emails = "lterra@stanford.edu, mterra@nuevaschool.org",
+	student = "Oran",
+	subject = "Calculus and Physics",
 )
 
 # ╔═╡ d14d6b18-b91a-4209-9c71-a7764f69a1e3
-email_template(
-	parent = "Lisa",
+email_template_senior(
+	guardians = "Lisa",
+	guardian_emails = "wachtellminer@gmail.com",
 	student = "Tobey",
-	subj_pronoun = "he",
-	obj_pronoun = "him",
-	experience = "We had a very productive online session last Saturday and session today. After reviewing the main principles of the work-energy theorem and gravitation, we got a jump start on applying integral calculus techniques to interpret and understand these systems on a deeper level. During session today, we started looking ahead to topics involving conservation of linear momentum.",
-	next_session = "Friday December 2nd, 3:30 - 5:00 pm",
+	subject = "AP Physics C",
 )
 
 # ╔═╡ 3729bfca-9ff3-42bd-bbae-e7b1520c5a9c
@@ -591,12 +611,13 @@ version = "17.4.0+0"
 # ╟─3099be37-c437-45ef-b9c5-93f2b37faaf5
 # ╟─0959e28e-d2b9-447d-9250-b0cde3ab1441
 # ╟─6b8fc068-b54d-47fc-8130-915630fe46f5
-# ╠═cd773ffe-f67d-4c7f-bc00-205679d11941
-# ╠═e64b902b-ad7a-4be9-8f64-a2cf4c0277ce
+# ╟─cd773ffe-f67d-4c7f-bc00-205679d11941
 # ╟─e3e301d2-15b0-44c1-bd5b-e8c618bfd534
+# ╟─6a712c12-dc82-4965-91c0-5b2c7c18aabd
 # ╟─d14d6b18-b91a-4209-9c71-a7764f69a1e3
 # ╟─58f11438-2961-4060-9662-bec2c7713526
 # ╟─21908d94-6765-11ed-054f-175cdeb0a423
+# ╟─212abe3a-3fb9-40d1-a520-29687ca035c2
 # ╠═3729bfca-9ff3-42bd-bbae-e7b1520c5a9c
 # ╠═39734b69-8227-4ee5-80c2-6186fa5249da
 # ╟─00000000-0000-0000-0000-000000000001
