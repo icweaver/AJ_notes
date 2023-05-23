@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.19.25
+# v0.19.26
 
 using Markdown
 using InteractiveUtils
@@ -10,9 +10,19 @@ begin
 	using MarkdownLiteral: @mdx
 end
 
+# ╔═╡ 7df02621-2f70-4b38-a131-fff74bb6bc13
+md"""
+# Students 🚀
+"""
+
 # ╔═╡ 24d29ea3-458b-4221-9ab2-01f0ef161432
 md"""
 ## Alon
+"""
+
+# ╔═╡ 6265a060-60f2-4106-8374-9e39793f7ba5
+md"""
+## Brian
 """
 
 # ╔═╡ 2678a46e-2735-4bfd-9f22-89995da7d441
@@ -20,10 +30,18 @@ md"""
 ## Ellie
 """
 
+# ╔═╡ e7e66ac9-fdc2-4b54-9666-d26eb33d0ad2
+md"""
+## John Henry
+"""
+
 # ╔═╡ a908175d-878a-4cdf-aef3-35a673b08c6d
 md"""
 ## Isabella
 """
+
+# ╔═╡ 4e07dc0a-5fd1-490d-8578-2b5a85a9984e
+email_template2("Ligia", "Isabella")
 
 # ╔═╡ d9c6e8e4-8f55-42ca-a441-47d2594535cb
 md"""
@@ -35,10 +53,19 @@ md"""
 ## Kaitlyn
 """
 
+# ╔═╡ 6cdfd4d7-ae6a-4b3e-a2e5-4b406649f4df
+md"""
+!!! note
+	Already emailed
+"""
+
 # ╔═╡ 9c1ec121-d805-400a-8e84-95cc65253d8c
 md"""
 ## Laird
 """
+
+# ╔═╡ 96ff6438-f20c-4288-9ded-c036e94db9bf
+email_template2("Alexandra", "Laird")
 
 # ╔═╡ e47f3843-156c-41f0-b49d-af5ebf42aa39
 md"""
@@ -70,6 +97,9 @@ md"""
 ## Shan
 """
 
+# ╔═╡ e64b902b-ad7a-4be9-8f64-a2cf4c0277ce
+email_template2("Vini", "Shan")
+
 # ╔═╡ e3e301d2-15b0-44c1-bd5b-e8c618bfd534
 md"""
 !!! note
@@ -77,54 +107,71 @@ md"""
 ## Tobey
 """
 
-# ╔═╡ 21908d94-6765-11ed-054f-175cdeb0a423
-function email_template(;
-	parent, student, subj_pronoun, obj_pronoun, experience, next_session,
-	)
-	@mdx """
-	Hi $(parent),
+# ╔═╡ 58f11438-2961-4060-9662-bec2c7713526
+md"""
+# Template
+"""
 
-	I hope this message finds you well! $(experience)
+# ╔═╡ 21908d94-6765-11ed-054f-175cdeb0a423
+function email_template(;guardians, guardian_emails, student, subject)
+	@mdx """
+	```
+	Subject: Academic Tutoring
+	to: $(guardian_emails)
+	cc: danafrancis@ajtutoring.com
+	bcc: ajtutoring@ajtutoring.solve360.com
+	```
+	Hi $(guardians),
+
+	I hope you are enjoying a great start to your summer! It was a pleasure helping $(student) with $(subject) this year. If you could take some time to leave a review, we would greatly appreciate it -- as it helps us reach other students. Here's a [link](https://www.google.com/search?q=aj+tutoring+palo+alto&rlz=1C1RXQR_enUS1016US1016&oq=&aqs=chrome.0.69i59j46i175i199i512j0i512j46i175i199i512j46i433i512j69i61j69i60l2.1054j0j7&sourceid=chrome&ie=UTF-8#lrd=0x808fbae5d91aaed1:0x25053eafb3a85475,3,,,,) to our Google reviews. No worries if not! At AJ Tutoring, we pride ourselves on our continuing commitment to our students throughout the educational process.
 	
-	**Finals Are Approaching**\\
-	As finals approach, we've found that planning is paramount to great results. In the coming sessions, we will review key topics and shore up content and test-taking weaknesses. I want to make sure I have time to support $(student) leading up to finals. If you feel that $(subj_pronoun) would benefit from extra sessions, please let me know. \\*\\*\\*Additionally, if we can be of help to $(student) in any other courses, just let us know!\\*\\*\\*
+	Unfortunately, I will be be pursuing other opportunities in science outreach next year and will not be working at AJ Tutoring. I want to ensure that this transition does not impact $(student)'s success in the next school year. We have several phenomenal academic and test preparation tutors who would be a great match for $(student). We would love to help place $(student) with a great tutoring match for any of next year's courses.
+	 
+	**If you are interested in tutoring for $(student) next year, please be sure to email my team leader Dana Francis at danafrancis@[ajtutoring.com](http://ajtutoring.com) or call us at (650) 331-3251.**
 	
-	One exercise I’ve found effective is to have my students make a list of topics that they learned over the semester and rank their confidence on a scale of 1-3 to help them decide where to best spend their study time. We can then find the resources $(student) will need to help $(obj_pronoun) practice. I would be happy to assign $(student) additional homework that will help with this review, and it might be worthwhile to put additional sessions on the calendar as we near the exam. My schedule is starting to fill up, so please let me know if you’d like me to add sessions for $(student)!
+	AJ Tutoring also offers:
 	
-	Our next session is $(next_session).
+	  1) [For-credit courses](https://www.ajtutoring.com/for-credit-classes/) (WASC-accredited and UC A-G approved) available during the summer or academic year!  For more details, please email forcredit\\@ajtutoring.com.
+		
+	  2) [College admissions counseling](https://www.ajtutoring.com/college-admissions-counseling/) to support students on their journey to college. For more details, please email collegecounseling\\@ajtutoring.com.
 	
-	**Winter Break/Holiday Plans**\\
-	Over Winter Break, I will be available from December 26th - January 8th. I often find it helpful to meet with my students after their finals while the exam is still fresh in their minds. $(student) can also take advantage of one of our special [Winter Break Courses](https://www.ajtutoring.com/academic-tutoring/winter-break-courses/), or get a [headstart on AP prep](https://www.ajtutoring.com/test-prep-tutoring/ap-test-prep/mid-year-ap-exam-prep/).
+	Thank you so much again for the opportunity to work with $(student) this year, and I wish $(student) the best of luck next year. Have a wonderful summer!
 	
-	We’re also still enrolling students for WASC-accredited and UC/CSU-approved [high school courses](https://www.ajtutoring.com/for-credit-classes/), a great alternative to the traditional classroom experience for many students.
-	
-	Please let me know if you'd like to schedule any winter break lessons.
-	
-	Thanks $(parent); hope you all are doing well!
-	
-	Best,\\
+	Thanks,\\
 	Ian
 	"""
 end
 
 # ╔═╡ 2bf8d68a-995f-4cb4-a2a4-d17955aaa71f
 email_template(
-	parent = "Dana",
+	guardians = "Dana",
+	guardian_emails = "hutt.dana@gmail.com",
 	student = "Alon",
-	subj_pronoun = "he",
-	obj_pronoun = "him",
-	experience = "We had a very productive session yesterday. After going through the new concepts in linear momentum conservation together, Alon was able to successfully complete every practice problem I gave him on the topic.",
-	next_session = "Thursday December 1st, 7:00 - 8:30 pm",
+	subject = "AP-Calculus-AB",
+)
+
+# ╔═╡ 29078c94-27ed-4f79-b31d-7fb96e064541
+email_template(
+	guardians = "Valerie",
+	guardian_emails = "valerieabrown@gmail.com",
+	student = "Brian",
+	subject = "Physics Honors",
 )
 
 # ╔═╡ 69c1e2ce-8ed0-47b1-b4f7-552b5b0a9d09
 email_template(
-	parent = "Yumi and John",
+	guardians = "Yumi and John",
+	guardian_emails = "yumihosakaclark@gmail.com, johnclark0123@gmail.com",
 	student = "Ellie",
-	subj_pronoun = "she",
-	obj_pronoun = "her",
-	experience = "We had a very productive session yesterday. After completing our review of projectile motion in two dimensions, we got a head start on her upcoming topic on energy and linear momentum conservation.",
-	next_session = "Thursday December 1st, 5:30 - 7:00 pm",
+	subject = "Physics",
+)
+
+# ╔═╡ 5ed7cb17-0563-4a10-b331-68debb6af0e6
+email_template(
+	guardians = "Jim",
+	guardian_emails ="jim_welsh1@me.com, jim-welsh1@me.com",
+	student = "John Henry",
+	subject = "Physics",
 )
 
 # ╔═╡ 0456bca6-a4f9-402c-8634-6474d152d163
@@ -147,24 +194,12 @@ email_template(
 	next_session = "Sunday November 20th, 3:00 - 4:30 pm",
 )
 
-# ╔═╡ abb4699c-e9e5-479c-88ef-19a378dfe4b7
-email_template(
-	parent = "Laura",
-	student = "Kaitlyn",
-	subj_pronoun = "she",
-	obj_pronoun = "her",
-	experience = "We had a very productive session on Tuesday. After reviewing the dynamics of banked curves, Kaitlyn and I turned to solidifying our understanding of Kepler's three laws of orbital motion.",
-	next_session = "Sunday November 27th, 6:45 - 8:15 pm",
-)
-
 # ╔═╡ 27741655-3ea7-4527-b22f-1bba7e4de50e
 email_template(
-	parent = "Alexandra",
+	guardians = "Alexandra",
+	guardian_emails = "alexandra@macolsen.com",
 	student = "Laird",
-	subj_pronoun = "he",
-	obj_pronoun = "him",
-	experience = "We had a very productive session yesterday. After reviewing the main principles of the work-energy theorem, Laird was able to successfully complete every practice problem I gave him on the topic.",
-	next_session = "Thursday December 1st, 3:00 - 4:30 pm",
+	subject = "Physics Honors"
 )
 
 # ╔═╡ c728ee21-da4e-47ff-94a7-9852ae26f5cc
@@ -237,55 +272,8 @@ email_template(
 	next_session = "Friday December 2nd, 3:30 - 5:00 pm",
 )
 
-# ╔═╡ aabe8910-05a4-43f3-8741-41ed4ec56e94
-function email_template2(parent, student)
-	@mdx """
-	```
-	$(student)'s Spring 2023 Finals Plan
-	```
-	Hi $(parent),
-
-	I hope this email finds you well! $(student) has been doing great in session and it has been a joy getting to work with them.
-	
-	As finals approach, we've found that planning is paramount to great results. In the coming sessions, we will review key topics and shore up content weaknesses. I want to make sure I have time to support $(student) leading up to finals, so please let me know if you would like to schedule extra sessions.
-	
-	One exercise we find helpful for students is to sit down with their class materials and a pad of paper to write out a list of all the topics that will likely appear on the final. As $(student) does this, they should rank each topic on a scale of 1-3 (1 being the least urgent, 3 being the most). This will not only help $(student) review the material, but also help them create an excellent study plan! We’ll start ASAP on the most urgent topics, utilizing a combination of online resources, practice problems, and past tests/quizzes. This should help $(student) generate questions that we can use to shore up any content gaps and improve their timing and efficiency when approaching test questions.
-
-	I look forward to working with $(student) through the end of the semester. Please let me know if you have any questions about the plan for $(student)!
-
-	Best, \\
-	Ian
-	"""
-end
-
-# ╔═╡ f6374464-9000-40dc-b894-5432d371fd60
-email_template2("Dana", "Alon")
-
-# ╔═╡ 25b22046-3484-4c82-9a1d-260fb54a1366
-email_template2("Yumi and John", "Ellie")
-
-# ╔═╡ 4e07dc0a-5fd1-490d-8578-2b5a85a9984e
-email_template2("Ligia", "Isabella")
-
-# ╔═╡ 6cdfd4d7-ae6a-4b3e-a2e5-4b406649f4df
-email_template2("Laura", "Kaitlyn")
-
-# ╔═╡ 96ff6438-f20c-4288-9ded-c036e94db9bf
-email_template2("Alexandra", "Laird")
-
-# ╔═╡ e64b902b-ad7a-4be9-8f64-a2cf4c0277ce
-email_template2("Vini", "Shan")
-
-# ╔═╡ 491d6675-5971-44b3-ac36-4ce5581b02f9
-md"""
-## John Henry
-"""
-
-# ╔═╡ d18288c8-9de6-44be-be43-3f136cd90493
-email_template2("Jim", "John Henry")
-
 # ╔═╡ 3729bfca-9ff3-42bd-bbae-e7b1520c5a9c
-TableOfContents(; title="Finals Prep 📧")
+TableOfContents(; title="Thanks =]")
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
@@ -302,7 +290,7 @@ PlutoUI = "~0.7.48"
 PLUTO_MANIFEST_TOML_CONTENTS = """
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.8.5"
+julia_version = "1.9.0"
 manifest_format = "2.0"
 project_hash = "cfe56b7664150e6e37de14f15743d90336921a63"
 
@@ -337,7 +325,7 @@ version = "0.8.7"
 [[deps.CompilerSupportLibraries_jll]]
 deps = ["Artifacts", "Libdl"]
 uuid = "e66e0078-7015-5450-92f7-15fbd957f2ae"
-version = "1.0.1+0"
+version = "1.0.2+0"
 
 [[deps.Crayons]]
 git-tree-sha1 = "249fe38abf76d48563e2f4556bebd215aa317e15"
@@ -413,7 +401,7 @@ version = "1.10.2+0"
 uuid = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
 
 [[deps.LinearAlgebra]]
-deps = ["Libdl", "libblastrampoline_jll"]
+deps = ["Libdl", "OpenBLAS_jll", "libblastrampoline_jll"]
 uuid = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 
 [[deps.Logging]]
@@ -437,14 +425,14 @@ version = "0.1.1"
 [[deps.MbedTLS_jll]]
 deps = ["Artifacts", "Libdl"]
 uuid = "c8ffd9c3-330d-5841-b78e-0817d7145fa1"
-version = "2.28.0+0"
+version = "2.28.2+0"
 
 [[deps.Mmap]]
 uuid = "a63ad114-7e13-5084-954f-fe012c677804"
 
 [[deps.MozillaCACerts_jll]]
 uuid = "14a3606d-f60d-562e-9121-12d972cd8159"
-version = "2022.2.1"
+version = "2022.10.11"
 
 [[deps.NetworkOptions]]
 uuid = "ca575930-c2e3-43a9-ace4-1e988b2c1908"
@@ -453,7 +441,7 @@ version = "1.2.0"
 [[deps.OpenBLAS_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "Libdl"]
 uuid = "4536629a-c528-5b80-bd46-f80d51c5b363"
-version = "0.3.20+0"
+version = "0.3.21+4"
 
 [[deps.Parsers]]
 deps = ["Dates", "SnoopPrecompile"]
@@ -462,9 +450,9 @@ uuid = "69de0a69-1ddd-5017-9359-2bf0b02dc9f0"
 version = "2.5.1"
 
 [[deps.Pkg]]
-deps = ["Artifacts", "Dates", "Downloads", "LibGit2", "Libdl", "Logging", "Markdown", "Printf", "REPL", "Random", "SHA", "Serialization", "TOML", "Tar", "UUIDs", "p7zip_jll"]
+deps = ["Artifacts", "Dates", "Downloads", "FileWatching", "LibGit2", "Libdl", "Logging", "Markdown", "Printf", "REPL", "Random", "SHA", "Serialization", "TOML", "Tar", "UUIDs", "p7zip_jll"]
 uuid = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
-version = "1.8.0"
+version = "1.9.0"
 
 [[deps.PlutoUI]]
 deps = ["AbstractPlutoDingetjes", "Base64", "ColorTypes", "Dates", "FixedPointNumbers", "Hyperscript", "HypertextLiteral", "IOCapture", "InteractiveUtils", "JSON", "Logging", "MIMEs", "Markdown", "Random", "Reexport", "URIs", "UUIDs"]
@@ -505,22 +493,28 @@ version = "1.0.1"
 uuid = "6462fe0b-24de-5631-8697-dd941f90decc"
 
 [[deps.SparseArrays]]
-deps = ["LinearAlgebra", "Random"]
+deps = ["Libdl", "LinearAlgebra", "Random", "Serialization", "SuiteSparse_jll"]
 uuid = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
 
 [[deps.Statistics]]
 deps = ["LinearAlgebra", "SparseArrays"]
 uuid = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+version = "1.9.0"
+
+[[deps.SuiteSparse_jll]]
+deps = ["Artifacts", "Libdl", "Pkg", "libblastrampoline_jll"]
+uuid = "bea87d4a-7f5b-5778-9afe-8cc45184846c"
+version = "5.10.1+6"
 
 [[deps.TOML]]
 deps = ["Dates"]
 uuid = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
-version = "1.0.0"
+version = "1.0.3"
 
 [[deps.Tar]]
 deps = ["ArgTools", "SHA"]
 uuid = "a4e569a6-e804-4fa4-b0f3-eef7a1d5b13e"
-version = "1.10.1"
+version = "1.10.0"
 
 [[deps.Test]]
 deps = ["InteractiveUtils", "Logging", "Random", "Serialization"]
@@ -546,12 +540,12 @@ uuid = "4ec0a83e-493e-50e2-b9ac-8f72acf5a8f5"
 [[deps.Zlib_jll]]
 deps = ["Libdl"]
 uuid = "83775a58-1f1d-513f-b197-d71354ab007a"
-version = "1.2.12+3"
+version = "1.2.13+0"
 
 [[deps.libblastrampoline_jll]]
-deps = ["Artifacts", "Libdl", "OpenBLAS_jll"]
+deps = ["Artifacts", "Libdl"]
 uuid = "8e850b90-86db-534c-a0d3-1478176c7d93"
-version = "5.1.1+0"
+version = "5.7.0+0"
 
 [[deps.nghttp2_jll]]
 deps = ["Artifacts", "Libdl"]
@@ -565,22 +559,24 @@ version = "17.4.0+0"
 """
 
 # ╔═╡ Cell order:
+# ╟─7df02621-2f70-4b38-a131-fff74bb6bc13
 # ╟─24d29ea3-458b-4221-9ab2-01f0ef161432
-# ╠═2bf8d68a-995f-4cb4-a2a4-d17955aaa71f
-# ╠═f6374464-9000-40dc-b894-5432d371fd60
+# ╟─2bf8d68a-995f-4cb4-a2a4-d17955aaa71f
+# ╟─6265a060-60f2-4106-8374-9e39793f7ba5
+# ╟─29078c94-27ed-4f79-b31d-7fb96e064541
 # ╟─2678a46e-2735-4bfd-9f22-89995da7d441
-# ╠═69c1e2ce-8ed0-47b1-b4f7-552b5b0a9d09
-# ╠═25b22046-3484-4c82-9a1d-260fb54a1366
+# ╟─69c1e2ce-8ed0-47b1-b4f7-552b5b0a9d09
+# ╠═e7e66ac9-fdc2-4b54-9666-d26eb33d0ad2
+# ╟─5ed7cb17-0563-4a10-b331-68debb6af0e6
 # ╟─a908175d-878a-4cdf-aef3-35a673b08c6d
 # ╠═0456bca6-a4f9-402c-8634-6474d152d163
 # ╠═4e07dc0a-5fd1-490d-8578-2b5a85a9984e
 # ╟─d9c6e8e4-8f55-42ca-a441-47d2594535cb
 # ╠═343f5e87-26a0-406c-ad8a-a6b487e13862
 # ╟─63ed1b36-3dc8-454e-b3d4-244607690088
-# ╠═abb4699c-e9e5-479c-88ef-19a378dfe4b7
-# ╠═6cdfd4d7-ae6a-4b3e-a2e5-4b406649f4df
+# ╟─6cdfd4d7-ae6a-4b3e-a2e5-4b406649f4df
 # ╟─9c1ec121-d805-400a-8e84-95cc65253d8c
-# ╠═27741655-3ea7-4527-b22f-1bba7e4de50e
+# ╟─27741655-3ea7-4527-b22f-1bba7e4de50e
 # ╠═96ff6438-f20c-4288-9ded-c036e94db9bf
 # ╟─e47f3843-156c-41f0-b49d-af5ebf42aa39
 # ╠═c728ee21-da4e-47ff-94a7-9852ae26f5cc
@@ -597,10 +593,8 @@ version = "17.4.0+0"
 # ╠═e64b902b-ad7a-4be9-8f64-a2cf4c0277ce
 # ╟─e3e301d2-15b0-44c1-bd5b-e8c618bfd534
 # ╟─d14d6b18-b91a-4209-9c71-a7764f69a1e3
+# ╟─58f11438-2961-4060-9662-bec2c7713526
 # ╟─21908d94-6765-11ed-054f-175cdeb0a423
-# ╠═aabe8910-05a4-43f3-8741-41ed4ec56e94
-# ╠═491d6675-5971-44b3-ac36-4ce5581b02f9
-# ╠═d18288c8-9de6-44be-be43-3f136cd90493
 # ╠═3729bfca-9ff3-42bd-bbae-e7b1520c5a9c
 # ╠═39734b69-8227-4ee5-80c2-6186fa5249da
 # ╟─00000000-0000-0000-0000-000000000001
