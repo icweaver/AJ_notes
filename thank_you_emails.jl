@@ -104,6 +104,12 @@ md"""
 ## Ori
 """
 
+# ╔═╡ 3099be37-c437-45ef-b9c5-93f2b37faaf5
+md"""
+!!! warning
+	Switch to "It was a pleasure helping Ori with AP Calculus AB last year"
+"""
+
 # ╔═╡ 6b8fc068-b54d-47fc-8130-915630fe46f5
 md"""
 ## Shan
@@ -232,22 +238,18 @@ email_template(
 
 # ╔═╡ 5798e5c8-7936-4da3-a28e-0804e0e36a3e
 email_template(
-	parent = "Luke and Megan",
+	guardians = "Luke and Megan",
+	guardian_emails = "lterra@stanford.edu, mterra@nuevaschool.org",
 	student = "Oran",
-	subj_pronoun = "he",
-	obj_pronoun = "him",
-	experience = "We had a very productive session on Tuesday. After reviewing our main differentiation techniques, Oran and I turned to upcoming topics in his courses, including analyzing the behaviour of damped oscillators.",
-	next_session = "Tuesday November 22nd, 4:30 - 6:00 pm",
+	subject = "Calculus and Physics",
 )
 
 # ╔═╡ 0959e28e-d2b9-447d-9250-b0cde3ab1441
 email_template(
-	parent = "Alon and Adi",
+	guardians = "Alon and Adi",
+	guardian_emails = "alon@adalon.com, adi@adalon.com",
 	student = "Ori",
-	subj_pronoun = "he",
-	obj_pronoun = "him",
-	experience = "We had a very productive online session on Wednesday. After reviewing the main principles of the chain rule and graphical interprations of the first and second derivative, Ori and I turned to current topics in his courses, including analyzing the behaviour of functions based on their concavity.",
-	next_session = "Wednesday November 23rd, 1:00 - 2:30 pm",
+	subject = "AP-Calculus-AB",
 )
 
 # ╔═╡ cd773ffe-f67d-4c7f-bc00-205679d11941
@@ -584,9 +586,10 @@ version = "17.4.0+0"
 # ╟─4dca46af-c3d5-486f-a961-0217a4f139c6
 # ╟─514cbef9-cbdb-4999-b69c-7bdd64110567
 # ╟─85813e2a-a9ec-42f6-8229-de42b9ad296b
-# ╠═5798e5c8-7936-4da3-a28e-0804e0e36a3e
+# ╟─5798e5c8-7936-4da3-a28e-0804e0e36a3e
 # ╟─dc3c57dc-29ce-4efd-a703-42432a63c0ea
-# ╠═0959e28e-d2b9-447d-9250-b0cde3ab1441
+# ╟─3099be37-c437-45ef-b9c5-93f2b37faaf5
+# ╟─0959e28e-d2b9-447d-9250-b0cde3ab1441
 # ╟─6b8fc068-b54d-47fc-8130-915630fe46f5
 # ╠═cd773ffe-f67d-4c7f-bc00-205679d11941
 # ╠═e64b902b-ad7a-4be9-8f64-a2cf4c0277ce
