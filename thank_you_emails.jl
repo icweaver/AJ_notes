@@ -67,19 +67,31 @@ md"""
 # ╔═╡ 96ff6438-f20c-4288-9ded-c036e94db9bf
 email_template2("Alexandra", "Laird")
 
-# ╔═╡ e47f3843-156c-41f0-b49d-af5ebf42aa39
+# ╔═╡ 0e44e696-a620-4303-8a16-bcccad8c0fe5
 md"""
-## Lauren
+## Lauren D.
 """
 
-# ╔═╡ b906ea69-f388-4fdf-8e51-e8c84b93a3be
+# ╔═╡ 6ca2dd11-f0a9-4e77-b8be-ed786c7d75b2
 md"""
-## Marianne
+!!! note
+	Already emailed
+"""
+
+# ╔═╡ e47f3843-156c-41f0-b49d-af5ebf42aa39
+md"""
+## Lauren L.
 """
 
 # ╔═╡ 3ea0416a-6c80-4a28-a8ba-1b2a2e95d23f
 md"""
 ## Nadim
+"""
+
+# ╔═╡ 4dca46af-c3d5-486f-a961-0217a4f139c6
+md"""
+!!! warning
+	Switch to "It was a pleasure helping Nadim with AP Physics C last year"
 """
 
 # ╔═╡ 85813e2a-a9ec-42f6-8229-de42b9ad296b
@@ -204,32 +216,18 @@ email_template(
 
 # ╔═╡ c728ee21-da4e-47ff-94a7-9852ae26f5cc
 email_template(
-	parent = "Susie",
+	guardians = "Susie",
+	guardian_emails = "susie_hong@yahoo.com, susielevine@gmail.com",
 	student = "Lauren",
-	subj_pronoun = "she",
-	obj_pronoun = "her",
-	experience = "We had a very productive session the Sunday before last. After reviewing inverse functions and their derivatives, Lauren and I explored alternative methods to determining the limiting behaviour of functions to prepare for the case when other methods may fail.",
-	next_session = "Sunday December 4th, 1:00 - 2:30 pm",
-)
-
-# ╔═╡ 327d6c45-c408-447a-8a04-92dbef9e1d7a
-email_template(
-	parent = "Jennifer and Daniel",
-	student = "Marianne",
-	subj_pronoun = "she",
-	obj_pronoun = "her",
-	experience = "We had a very productive session the Sunday before last. Despite still getting over her cold, Marianne was still able to actively participate during our review of implicit differentiation. We were then able to continue on to work on the new topic of related rates together. I hope that she was able to get some good rest and is feeling better!",
-	next_session = "Sunday November 20th, 5:00 - 6:00 pm",
+	subject = "AP-Calculus-AB",
 )
 
 # ╔═╡ 514cbef9-cbdb-4999-b69c-7bdd64110567
 email_template(
-	parent = "Shireen",
+	guardians = "Shireen",
+	guardian_emails = "shireenbazzi@gmail.com",
 	student = "Nadim",
-	subj_pronoun = "he",
-	obj_pronoun = "him",
-	experience = "We had a very productive session on Wednesday. After completing our review on integrating the moments of inertia of uniform solids, Nadim and I turned to problems describing the dynamics of rolling objects. Afterwards, we got a jump start on upcoming topics in his course, including torque, angular momentum, and their three dimensional vector representations.",
-	next_session = "Wednesday November 23rd, 6:30 - 8:00 pm",
+	subject = "AP Physics C"
 )
 
 # ╔═╡ 5798e5c8-7936-4da3-a28e-0804e0e36a3e
@@ -578,12 +576,13 @@ version = "17.4.0+0"
 # ╟─9c1ec121-d805-400a-8e84-95cc65253d8c
 # ╟─27741655-3ea7-4527-b22f-1bba7e4de50e
 # ╠═96ff6438-f20c-4288-9ded-c036e94db9bf
+# ╟─0e44e696-a620-4303-8a16-bcccad8c0fe5
+# ╟─6ca2dd11-f0a9-4e77-b8be-ed786c7d75b2
 # ╟─e47f3843-156c-41f0-b49d-af5ebf42aa39
-# ╠═c728ee21-da4e-47ff-94a7-9852ae26f5cc
-# ╟─b906ea69-f388-4fdf-8e51-e8c84b93a3be
-# ╠═327d6c45-c408-447a-8a04-92dbef9e1d7a
+# ╟─c728ee21-da4e-47ff-94a7-9852ae26f5cc
 # ╟─3ea0416a-6c80-4a28-a8ba-1b2a2e95d23f
-# ╠═514cbef9-cbdb-4999-b69c-7bdd64110567
+# ╟─4dca46af-c3d5-486f-a961-0217a4f139c6
+# ╟─514cbef9-cbdb-4999-b69c-7bdd64110567
 # ╟─85813e2a-a9ec-42f6-8229-de42b9ad296b
 # ╠═5798e5c8-7936-4da3-a28e-0804e0e36a3e
 # ╟─dc3c57dc-29ce-4efd-a703-42432a63c0ea
