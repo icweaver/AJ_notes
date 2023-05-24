@@ -40,14 +40,6 @@ md"""
 ## Isabella
 """
 
-# ╔═╡ 4e07dc0a-5fd1-490d-8578-2b5a85a9984e
-email_template2("Ligia", "Isabella")
-
-# ╔═╡ d9c6e8e4-8f55-42ca-a441-47d2594535cb
-md"""
-## Jack
-"""
-
 # ╔═╡ 63ed1b36-3dc8-454e-b3d4-244607690088
 md"""
 ## Kaitlyn
@@ -63,9 +55,6 @@ md"""
 md"""
 ## Laird
 """
-
-# ╔═╡ 96ff6438-f20c-4288-9ded-c036e94db9bf
-email_template2("Alexandra", "Laird")
 
 # ╔═╡ 0e44e696-a620-4303-8a16-bcccad8c0fe5
 md"""
@@ -193,26 +182,6 @@ email_template(
 	subject = "Physics",
 )
 
-# ╔═╡ 0456bca6-a4f9-402c-8634-6474d152d163
-email_template(
-	parent = "Ligia",
-	student = "Isabella",
-	subj_pronoun = "she",
-	obj_pronoun = "her",
-	experience = "We had a very productive session on Tuesday. After going through the new concepts in optimization techniques, Isabella was able to successfully complete every practice problem I gave her on the topic.",
-	next_session = "Tueday November 22nd, 3:15 - 4:30 pm",
-)
-
-# ╔═╡ 343f5e87-26a0-406c-ad8a-a6b487e13862
-email_template(
-	parent = "David",
-	student = "Jack",
-	subj_pronoun = "he",
-	obj_pronoun = "him",
-	experience = "We had a very productive session the Sunday before last. After cementing the process of writing out our steps in an organized, reproducible fashion, we turned to tackling upcoming topics in Jack's class, including graphing and algebraically manipulating functions in the complex plane.",
-	next_session = "Sunday November 20th, 3:00 - 4:30 pm",
-)
-
 # ╔═╡ 27741655-3ea7-4527-b22f-1bba7e4de50e
 email_template(
 	guardians = "Alexandra",
@@ -259,6 +228,14 @@ function email_template_senior(;guardians, guardian_emails, student, subject)
 	Ian
 	"""
 end
+
+# ╔═╡ 0456bca6-a4f9-402c-8634-6474d152d163
+email_template_senior(
+	guardians = "Ligia",
+	guardian_emails = "harrington.ligia@gmail.com",
+	student = "Isabella",
+	subject = "Physics and Calculus",
+)
 
 # ╔═╡ c728ee21-da4e-47ff-94a7-9852ae26f5cc
 email_template_senior(
@@ -586,18 +563,14 @@ version = "17.4.0+0"
 # ╟─29078c94-27ed-4f79-b31d-7fb96e064541
 # ╟─2678a46e-2735-4bfd-9f22-89995da7d441
 # ╟─69c1e2ce-8ed0-47b1-b4f7-552b5b0a9d09
-# ╠═e7e66ac9-fdc2-4b54-9666-d26eb33d0ad2
+# ╟─e7e66ac9-fdc2-4b54-9666-d26eb33d0ad2
 # ╟─5ed7cb17-0563-4a10-b331-68debb6af0e6
 # ╟─a908175d-878a-4cdf-aef3-35a673b08c6d
-# ╠═0456bca6-a4f9-402c-8634-6474d152d163
-# ╠═4e07dc0a-5fd1-490d-8578-2b5a85a9984e
-# ╟─d9c6e8e4-8f55-42ca-a441-47d2594535cb
-# ╠═343f5e87-26a0-406c-ad8a-a6b487e13862
+# ╟─0456bca6-a4f9-402c-8634-6474d152d163
 # ╟─63ed1b36-3dc8-454e-b3d4-244607690088
 # ╟─6cdfd4d7-ae6a-4b3e-a2e5-4b406649f4df
 # ╟─9c1ec121-d805-400a-8e84-95cc65253d8c
 # ╟─27741655-3ea7-4527-b22f-1bba7e4de50e
-# ╠═96ff6438-f20c-4288-9ded-c036e94db9bf
 # ╟─0e44e696-a620-4303-8a16-bcccad8c0fe5
 # ╟─6ca2dd11-f0a9-4e77-b8be-ed786c7d75b2
 # ╟─e47f3843-156c-41f0-b49d-af5ebf42aa39
