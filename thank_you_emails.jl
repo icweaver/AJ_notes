@@ -20,12 +20,6 @@ md"""
 ## Alon
 """
 
-# ╔═╡ 3c517707-a930-4297-a822-b9c1953e33dd
-md"""
-!!! warning
-	Switch Google reviews link to LASA office
-"""
-
 # ╔═╡ 6265a060-60f2-4106-8374-9e39793f7ba5
 md"""
 ## Brian
@@ -127,7 +121,7 @@ md"""
 """
 
 # ╔═╡ 21908d94-6765-11ed-054f-175cdeb0a423
-function email_template(;guardians, guardian_emails, student, subject)
+function email_template(;guardians, guardian_emails, student, subject, link="https://www.google.com/search?q=aj+tutoring+palo+alto&rlz=1C1RXQR_enUS1016US1016&oq=&aqs=chrome.0.69i59j46i175i199i512j0i512j46i175i199i512j46i433i512j69i61j69i60l2.1054j0j7&sourceid=chrome&ie=UTF-8#lrd=0x808fbae5d91aaed1:0x25053eafb3a85475,3,,,,")
 	@mdx """
 	```
 	Subject: Academic Tutoring
@@ -137,7 +131,7 @@ function email_template(;guardians, guardian_emails, student, subject)
 	```
 	Hi $(guardians),
 
-	I hope you are enjoying a great start to your summer! It was a pleasure helping $(student) with $(subject) this year. If you could take some time to leave a review, we would greatly appreciate it -- as it helps us reach other students. Here's a [link](https://www.google.com/search?q=aj+tutoring+palo+alto&rlz=1C1RXQR_enUS1016US1016&oq=&aqs=chrome.0.69i59j46i175i199i512j0i512j46i175i199i512j46i433i512j69i61j69i60l2.1054j0j7&sourceid=chrome&ie=UTF-8#lrd=0x808fbae5d91aaed1:0x25053eafb3a85475,3,,,,) to our Google reviews. No worries if not! At AJ Tutoring, we pride ourselves on our continuing commitment to our students throughout the educational process.
+	I hope you are enjoying a great start to your summer! It was a pleasure helping $(student) with $(subject) this year. If you could take some time to leave a review, we would greatly appreciate it -- as it helps us reach other students. Here's a [link]($(link)) to our Google reviews. No worries if not! At AJ Tutoring, we pride ourselves on our continuing commitment to our students throughout the educational process.
 	
 	Unfortunately, I will be be pursuing other opportunities in science outreach and education next year and will not be working at AJ Tutoring. I want to ensure that this transition does not impact $(student)'s success in the next school year. We have several phenomenal academic and test preparation tutors who would be a great match for $(student). We would love to help place $(student) with a great tutoring match for any of next year's courses.
 	 
@@ -162,6 +156,7 @@ email_template(
 	guardian_emails = "hutt.dana@gmail.com",
 	student = "Alon",
 	subject = "AP-Calculus-AB",
+	link = "https://www.google.com/search?q=AJ+Tutoring%2C+South+San+Antonio+Road%2C+Los+Altos%2C+Santa+Clara%2C+CA&rlz=1C1RXQR_enUS1016US1016&ei=d3duZK_9L7aS0PEPrPyOyAM&oq=aj+tutoring+los+altos+sa&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQARgAMgIIJjICCCY6CggAEEcQ1gQQsAM6BQgAEIAEOgsILhCABBDHARCvAToGCAAQFhAeSgQIQRgAUJABWNEDYNAHaAFwAXgAgAFWiAH-AZIBATOYAQCgAQHAAQHIAQg&sclient=gws-wiz-serp#lrd=0x808fb0e58c05aa1d:0x9920ad16ac4e9111,3,,,",
 )
 
 # ╔═╡ 29078c94-27ed-4f79-b31d-7fb96e064541
@@ -564,7 +559,6 @@ version = "17.4.0+0"
 # ╔═╡ Cell order:
 # ╟─7df02621-2f70-4b38-a131-fff74bb6bc13
 # ╟─24d29ea3-458b-4221-9ab2-01f0ef161432
-# ╟─3c517707-a930-4297-a822-b9c1953e33dd
 # ╟─2bf8d68a-995f-4cb4-a2a4-d17955aaa71f
 # ╟─6265a060-60f2-4106-8374-9e39793f7ba5
 # ╟─29078c94-27ed-4f79-b31d-7fb96e064541
