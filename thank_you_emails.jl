@@ -20,6 +20,12 @@ md"""
 ## Alon
 """
 
+# ╔═╡ 3c517707-a930-4297-a822-b9c1953e33dd
+md"""
+!!! warning
+	Switch Google reviews link to LASA office
+"""
+
 # ╔═╡ 6265a060-60f2-4106-8374-9e39793f7ba5
 md"""
 ## Brian
@@ -558,6 +564,7 @@ version = "17.4.0+0"
 # ╔═╡ Cell order:
 # ╟─7df02621-2f70-4b38-a131-fff74bb6bc13
 # ╟─24d29ea3-458b-4221-9ab2-01f0ef161432
+# ╟─3c517707-a930-4297-a822-b9c1953e33dd
 # ╟─2bf8d68a-995f-4cb4-a2a4-d17955aaa71f
 # ╟─6265a060-60f2-4106-8374-9e39793f7ba5
 # ╟─29078c94-27ed-4f79-b31d-7fb96e064541
